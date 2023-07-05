@@ -28,4 +28,13 @@ double imagePadding(BuildContext context) {
   return (getPageHeight(context) * 0.1) ;
 }
 
+double getContHoriMargin(BuildContext context) {
+  return (getPageWidth(context) * 0.05) ;
+}
+
+double ContWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.35) ;
+}
+
+
 
