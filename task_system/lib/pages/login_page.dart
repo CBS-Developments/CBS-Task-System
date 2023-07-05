@@ -7,6 +7,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Center(
         child: Column(
           children: [
@@ -26,9 +27,11 @@ class LoginPage extends StatelessWidget {
             Row(
               children: [
                 Container(
+                  padding: EdgeInsets.all(imagePadding(context)),
                   width: imageContWidth(context),
                   height: imageContHeight(context),
-                  color: Colors.blueAccent,
+                  color: Colors.white,
+                  child: Image.asset('images/log.png'),
                 ),
 
                 Container(

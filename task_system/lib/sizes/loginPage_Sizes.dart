@@ -24,4 +24,8 @@ double imageContHeight(BuildContext context) {
   return (getPageHeight(context) * 0.7) ;
 }
 
+double imagePadding(BuildContext context) {
+  return (getPageHeight(context) * 0.1) ;
+}
+
 
