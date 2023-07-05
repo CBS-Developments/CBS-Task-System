@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_system/components/loginBox.dart';
 import 'package:task_system/sizes/loginPage_Sizes.dart';
 
 class LoginPage extends StatelessWidget {
@@ -11,19 +12,19 @@ class LoginPage extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            SizedBox(height: getXLBoxHeight(context),),
-
-            Text('CBS TASK SYSTEM',
+            SizedBox(
+              height: getXLBoxHeight(context),
+            ),
+            Text(
+              'CBS TASK SYSTEM',
               style: TextStyle(
                   fontSize: getFontXXXL(context),
                   color: Colors.black,
-                fontWeight: FontWeight.bold
-              ),
+                  fontWeight: FontWeight.bold),
             ),
-
-            SizedBox(height: getXLBoxHeight(context),),
-
-
+            SizedBox(
+              height: getXLBoxHeight(context),
+            ),
             Row(
               children: [
                 Container(
@@ -34,11 +35,11 @@ class LoginPage extends StatelessWidget {
                   child: Image.asset('images/log.png'),
                 ),
 
-                Container(
-                  width: imageContWidth(context),
-                  height: imageContHeight(context),
-                  color: Colors.yellowAccent,
+                LoginBox(
+                  child: Column(
                 ),
+
+                )
               ],
             )
           ],
