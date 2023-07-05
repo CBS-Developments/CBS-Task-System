@@ -14,7 +14,12 @@ class _MainTaskState extends State<MainTask> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: myAppBar(context),
-      
+      body: Row(
+        children: [
+          myDrawer(context), // Call myDrawer as a function and pass the context
+        ],
+      ),
     );
   }
 }
+
