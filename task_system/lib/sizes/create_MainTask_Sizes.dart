@@ -20,3 +20,11 @@ double appBarFont(BuildContext context) {
 double drawerWidth(BuildContext context) {
   return (getPageWidth(context) * 0.15) ;
 }
+
+double sideBarFont(BuildContext context) {
+  return (getPageWidth(context) * 0.0040) * (getPageHeight(context) * 0.0040);
+}
+
+double iconWeight(BuildContext context) {
+  return (getPageWidth(context) * 0.008) ;
+}
