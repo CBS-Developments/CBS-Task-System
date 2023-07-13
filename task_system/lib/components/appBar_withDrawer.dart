@@ -9,6 +9,7 @@ PreferredSizeWidget myAppBar(BuildContext context) {
     preferredSize: Size.fromHeight(appBarHeight(context)),
     child: AppBar(
       backgroundColor: Colors.white,
+      automaticallyImplyLeading: false,
       title: Text(
         'CBS Task System',
         style: TextStyle(
