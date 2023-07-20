@@ -21,6 +21,7 @@ PreferredSizeWidget myAppBar(BuildContext context) {
     ),
   );
 }
+
 // var myDrawer = (BuildContext context) {
 //   final double fontSize = sideBarFont(context);
 //

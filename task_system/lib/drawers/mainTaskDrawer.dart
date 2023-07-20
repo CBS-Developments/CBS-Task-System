@@ -39,9 +39,7 @@ class MainTaskDrawer extends StatelessWidget {
               ],
             ),
           ),
-
         ],
-
       ),
     );
   }
