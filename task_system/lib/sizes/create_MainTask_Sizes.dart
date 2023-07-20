@@ -97,3 +97,23 @@ double serBoxPadding(BuildContext context) {
 double sizeBoxWidthL(BuildContext context) {
   return (getPageWidth(context) * 0.2) ;
 }
+
+double addDWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.5) ;
+}
+
+double addDRWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.2) ;
+}
+
+double sizeBoxWidthS(BuildContext context) {
+  return (getPageWidth(context) * 0.05) ;
+}
+
+double addDPadding(BuildContext context) {
+  return (getPageWidth(context) * 0.02) ;
+}
+
+double addDRPadding(BuildContext context) {
+  return (getPageWidth(context) * 0.005) ;
+}
