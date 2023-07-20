@@ -28,3 +28,27 @@ double sideBarFont(BuildContext context) {
 double iconWeight(BuildContext context) {
   return (getPageWidth(context) * 0.008) ;
 }
+
+double smallBoxHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.018) ;
+}
+
+double drawerButtonWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.14) ;
+}
+
+double drawerButtonHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.05) ;
+}
+
+double drawerIconScale(BuildContext context) {
+  return (getPageWidth(context) * 0.0051) * (getPageHeight(context) * 0.0051);
+}
+
+double drawerMiniWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.010) ;
+}
+
+double drawerFontLarge(BuildContext context) {
+  return (getPageWidth(context) * 0.0038) * (getPageHeight(context) * 0.0038);
+}
