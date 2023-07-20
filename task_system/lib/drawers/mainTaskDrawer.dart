@@ -19,8 +19,9 @@ class MainTaskDrawer extends StatelessWidget {
 
           MyDrawerButton(
             onTap: () {},
-            fillColor: AppColor.lightBlue,
+            fillColor: Colors.white,
             child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Icon(
                   Icons.home_rounded,

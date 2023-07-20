@@ -42,13 +42,17 @@ double drawerButtonHeight(BuildContext context) {
 }
 
 double drawerIconScale(BuildContext context) {
-  return (getPageWidth(context) * 0.0051) * (getPageHeight(context) * 0.0051);
+  return (getPageWidth(context) * 0.0045) * (getPageHeight(context) * 0.0045);
 }
 
 double drawerMiniWidth(BuildContext context) {
-  return (getPageWidth(context) * 0.010) ;
+  return (getPageWidth(context) * 0.005) ;
 }
 
 double drawerFontLarge(BuildContext context) {
   return (getPageWidth(context) * 0.0038) * (getPageHeight(context) * 0.0038);
+}
+
+double drawerIconMargin(BuildContext context) {
+  return (getPageWidth(context) * 0.005) ;
 }
