@@ -65,6 +65,10 @@ double navBoxHeight(BuildContext context) {
   return (getPageHeight(context) * 0.05) ;
 }
 
+double mainBoxHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.7) ;
+}
+
 double navBoxWidth(BuildContext context) {
   return (getPageWidth(context) * 0.4) ;
 }
@@ -103,7 +107,7 @@ double addDWidth(BuildContext context) {
 }
 
 double addDRWidth(BuildContext context) {
-  return (getPageWidth(context) * 0.2) ;
+  return (getPageWidth(context) * 0.23) ;
 }
 
 double sizeBoxWidthS(BuildContext context) {

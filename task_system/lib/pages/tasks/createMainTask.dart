@@ -62,7 +62,7 @@ class _MainTaskState extends State<MainTask> {
                     Container(
                       margin: EdgeInsets.symmetric(
                           horizontal: addDPadding(context)),
-                      color: Colors.grey,
+                      // color: Colors.grey,
                       height: navBoxHeight(context),
                       width: addDWidth(context),
                       child: Row(
@@ -127,10 +127,10 @@ class _MainTaskState extends State<MainTask> {
                       width: sizeBoxWidthS(context),
                     ),
                     Container(
-                      color: Colors.blueGrey,
+                      // color: Colors.blueGrey,
                       height: navBoxHeight(context),
                       width: addDRWidth(context),
-                      margin: EdgeInsets.symmetric(horizontal:addDRPadding(context)),
+                      padding: EdgeInsets.symmetric(horizontal: navBoxPadding(context)),
                       child: Row(
                         children: [
                           Text(
@@ -143,7 +143,37 @@ class _MainTaskState extends State<MainTask> {
                       ),
                     ),
                   ],
+                ),
+                SizedBox(
+                  height: smallBoxHeight(context),
+                ),
+
+                Row(
+                  children: [
+                    Container(
+                      margin: EdgeInsets.symmetric(
+                          horizontal: addDPadding(context)),
+                      color: Colors.greenAccent,
+                      height: mainBoxHeight(context),
+                      width: addDWidth(context),
+
+                    ),
+
+                    SizedBox(
+                      width: sizeBoxWidthS(context),
+                    ),
+
+                    Container(
+                      color: Colors.yellowAccent,
+                      height: mainBoxHeight(context),
+                      width: addDRWidth(context),
+
+
+                    )
+                  ],
                 )
+
+
               ],
             ),
           )
