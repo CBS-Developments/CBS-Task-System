@@ -12,26 +12,26 @@ class SearchBox extends StatelessWidget {
       width: serBoxWidth(context),
       height: serBoxHeight(context),
       // color: Colors.white,
-      child: Center(
-        child: TextField(
-          controller: searchController,
-          textAlignVertical: TextAlignVertical.bottom,
-          decoration: InputDecoration(
-              suffixIcon: Icon(Icons.search,color: Colors.grey),
-              enabledBorder:  OutlineInputBorder(
-                borderSide: BorderSide(color: Colors.grey.shade200),
-                borderRadius: BorderRadius.circular(20.0),
-              ),
-              focusedBorder: OutlineInputBorder(
-                borderSide: BorderSide(color: Colors.grey.shade400),
-                borderRadius: BorderRadius.circular(20.0),
-              ),
-              fillColor: Colors.white,
-              filled: true,
-              hintText: 'Search',
-              hintStyle: TextStyle(color: Colors.grey[500],
-              )
-          ),
+      child: TextField(
+        controller: searchController,
+        // textAlignVertical: TextAlignVertical.bottom,
+        textAlign: TextAlign.start,
+        textAlignVertical: TextAlignVertical.bottom,
+        decoration: InputDecoration(
+            suffixIcon: Icon(Icons.search,color: Colors.grey,size: drawerIconScale(context),),
+            enabledBorder:  OutlineInputBorder(
+              borderSide: BorderSide(color: Colors.grey.shade200),
+              borderRadius: BorderRadius.circular(20.0),
+            ),
+            focusedBorder: OutlineInputBorder(
+              borderSide: BorderSide(color: Colors.grey.shade400),
+              borderRadius: BorderRadius.circular(20.0),
+            ),
+            fillColor: Colors.white,
+            filled: true,
+            hintText: 'Search',
+            hintStyle: TextStyle(color: Colors.grey[500],fontSize: navTextFont(context)
+            )
         ),
       ),
     );
