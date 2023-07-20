@@ -13,6 +13,7 @@ class _DashboardState extends State<Dashboard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: myAppBar(context),
       body: Row(
         children: [
