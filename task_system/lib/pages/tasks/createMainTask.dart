@@ -3,6 +3,8 @@ import 'package:task_system/components/appBar.dart';
 import 'package:task_system/drawers/mainTaskDrawer.dart';
 import 'package:task_system/sizes/create_MainTask_Sizes.dart';
 
+import '../../sizes/dashboard_sizes.dart';
+
 class MainTask extends StatefulWidget {
   const MainTask({Key? key}) : super(key: key);
 
@@ -18,6 +20,20 @@ class _MainTaskState extends State<MainTask> {
       body: Row(
         children: [
           MainTaskDrawer(), // Call myDrawer as a function and pass the context
+
+          Container(
+            width: rightSideWidth(context),
+            height: getPageHeight(context),
+            color: Colors.blueAccent,
+            child: Column(
+              children: [
+                
+              ],
+            ),
+
+          )
+
+
         ],
       ),
     );

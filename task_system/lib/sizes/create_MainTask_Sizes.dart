@@ -56,3 +56,7 @@ double drawerFontLarge(BuildContext context) {
 double drawerIconMargin(BuildContext context) {
   return (getPageWidth(context) * 0.005) ;
 }
+
+double tabPadding(BuildContext context) {
+  return (getPageWidth(context) * 0.0047) ;
+}
