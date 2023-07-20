@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task_system/components/loginBox.dart';
+import 'package:task_system/components/my_button.dart';
 import 'package:task_system/sizes/loginPage_Sizes.dart';
 
 import '../components/login_textfeild.dart';
@@ -51,14 +52,41 @@ class LoginPage extends StatelessWidget {
                       SizedBox(
                         height: sizeBoxLHeight(context),
                       ),
-
-                      LoginTextField(labelText: 'User Name',),
-
+                      LoginTextField(
+                        labelText: 'User Name',
+                      ),
                       SizedBox(
                         height: sizeBoxMHeight(context),
                       ),
+                      LoginTextField(
+                        labelText: 'Password',
+                      ),
+                      SizedBox(
+                        height: sizeBoxLHeight(context),
+                      ),
+                      MyButton(onTap: () {}, childText: 'Login'),
+                      SizedBox(
+                        height: sizeBoxLHeight(context),
+                      ),
+                      Text(
+                        '- Or -',
+                        style: TextStyle(
+                            color: Colors.grey, fontSize: buttonFont(context)),
+                      ),
+                      SizedBox(
+                        height: sizeBoxLHeight(context),
+                      ),
 
-                      LoginTextField(labelText: 'Password',)
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Image.asset('images/google.png',
+                            width: tileWidth(context),),
+
+                          Image.asset('images/apple.png',
+                            width: tileWidth(context),),
+                        ],
+                      )
                     ],
                   ),
                 )
