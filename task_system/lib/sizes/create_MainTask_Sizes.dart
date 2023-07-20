@@ -62,7 +62,7 @@ double tabPadding(BuildContext context) {
 }
 
 double navBoxHeight(BuildContext context) {
-  return (getPageHeight(context) * 0.055) ;
+  return (getPageHeight(context) * 0.05) ;
 }
 
 double navBoxWidth(BuildContext context) {
@@ -79,7 +79,7 @@ double navBoxPadding(BuildContext context) {
 
 
 double serBoxHeight(BuildContext context) {
-  return (getPageHeight(context) * 0.055) ;
+  return (getPageHeight(context) * 0.05) ;
 }
 
 double serBoxWidth(BuildContext context) {

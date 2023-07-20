@@ -4,6 +4,7 @@ import 'package:task_system/components/navigate_text.dart';
 import 'package:task_system/components/search_box.dart';
 import 'package:task_system/drawers/mainTaskDrawer.dart';
 import 'package:task_system/sizes/create_MainTask_Sizes.dart';
+import 'package:task_system/tabs/task_tab.dart';
 
 import '../../sizes/dashboard_sizes.dart';
 
@@ -43,6 +44,15 @@ class _MainTaskState extends State<MainTask> {
                      SearchBox()
                   ],
                 ),
+
+                SizedBox(height: smallBoxHeight(context),),
+
+                TaskTabBar(
+                  firstButtonColor:Colors.deepPurple,
+                  secButtonColor:Colors.black,
+                  thirdButtonColor: Colors.black,
+                  fourthButtonColor: Colors.black,
+                  fivethButtonColor: Colors.black,)
               ],
             ),
           )

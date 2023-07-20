@@ -19,14 +19,14 @@ class SearchBox extends StatelessWidget {
           decoration: InputDecoration(
               suffixIcon: Icon(Icons.search,color: Colors.grey),
               enabledBorder:  OutlineInputBorder(
-                borderSide: BorderSide(color: Colors.white),
+                borderSide: BorderSide(color: Colors.grey.shade200),
                 borderRadius: BorderRadius.circular(20.0),
               ),
               focusedBorder: OutlineInputBorder(
-                borderSide: BorderSide(color: Colors.grey.shade300),
+                borderSide: BorderSide(color: Colors.grey.shade400),
                 borderRadius: BorderRadius.circular(20.0),
               ),
-              fillColor: Colors.grey.shade200,
+              fillColor: Colors.white,
               filled: true,
               hintText: 'Search',
               hintStyle: TextStyle(color: Colors.grey[500],
