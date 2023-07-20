@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:task_system/components/loginBox.dart';
 import 'package:task_system/sizes/loginPage_Sizes.dart';
 
+import '../components/login_textfeild.dart';
+
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
 
@@ -34,11 +36,31 @@ class LoginPage extends StatelessWidget {
                   color: Colors.white,
                   child: Image.asset('images/log.png'),
                 ),
-
                 LoginBox(
                   child: Column(
-                ),
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        height: getXLBoxHeight(context),
+                        width: ContWidth(context),
+                      ),
+                      Text(
+                        'User Login',
+                        style: TextStyle(fontSize: getFontXL(context)),
+                      ),
+                      SizedBox(
+                        height: sizeBoxLHeight(context),
+                      ),
 
+                      LoginTextField(labelText: 'User Name',),
+
+                      SizedBox(
+                        height: sizeBoxMHeight(context),
+                      ),
+
+                      LoginTextField(labelText: 'Password',)
+                    ],
+                  ),
                 )
               ],
             )
