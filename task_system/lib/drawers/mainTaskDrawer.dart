@@ -10,7 +10,7 @@ class MainTaskDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: AppColor.lightBlue,
-      width: getPageWidth(context),
+      width: drawerWidth(context),
       height: getPageHeight(context),
 
       child: Column(
@@ -19,18 +19,93 @@ class MainTaskDrawer extends StatelessWidget {
 
           MyDrawerButton(
             onTap: () {},
-            fillColor: Colors.white,
+            fillColor: AppColor.lightBlue,
             child: Row(
               children: [
                 Icon(
-                  Icons.dashboard_rounded,
+                  Icons.home_rounded,
                   color: AppColor.slateGray,
                   size: drawerIconScale(context),
                   // size: drawerIconScale(context),
                 ),
                 SizedBox(width: drawerMiniWidth(context)),
                 Text(
-                  'DASHBOARD',
+                  'Dashboard',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: drawerFontLarge(context),
+                  ),
+                ),
+              ],
+            ),
+          ),
+
+          SizedBox(height: smallBoxHeight(context),),
+
+          MyDrawerButton(
+            onTap: () {},
+            fillColor: AppColor.lightBlue,
+            child: Row(
+              children: [
+                Icon(
+                  Icons.settings_rounded,
+                  color: AppColor.slateGray,
+                  size: drawerIconScale(context),
+                  // size: drawerIconScale(context),
+                ),
+                SizedBox(width: drawerMiniWidth(context)),
+                Text(
+                  'Tasks',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: drawerFontLarge(context),
+                  ),
+                ),
+              ],
+            ),
+          ),
+
+          SizedBox(height: smallBoxHeight(context),),
+
+          MyDrawerButton(
+            onTap: () {},
+            fillColor: AppColor.lightBlue,
+            child: Row(
+              children: [
+                Icon(
+                  Icons.person_2_rounded,
+                  color: AppColor.slateGray,
+                  size: drawerIconScale(context),
+                  // size: drawerIconScale(context),
+                ),
+                SizedBox(width: drawerMiniWidth(context)),
+                Text(
+                  'Profile',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: drawerFontLarge(context),
+                  ),
+                ),
+              ],
+            ),
+          ),
+
+          SizedBox(height: smallBoxHeight(context),),
+
+          MyDrawerButton(
+            onTap: () {},
+            fillColor: AppColor.lightBlue,
+            child: Row(
+              children: [
+                Icon(
+                  Icons.message_rounded,
+                  color: AppColor.slateGray,
+                  size: drawerIconScale(context),
+                  // size: drawerIconScale(context),
+                ),
+                SizedBox(width: drawerMiniWidth(context)),
+                Text(
+                  'Chat',
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: drawerFontLarge(context),
