@@ -34,11 +34,20 @@ class LoginPage extends StatelessWidget {
                   color: Colors.white,
                   child: Image.asset('images/log.png'),
                 ),
-
                 LoginBox(
                   child: Column(
-                ),
-
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        height: getXLBoxHeight(context),
+                        width: ContWidth(context),
+                      ),
+                      Text(
+                        'User Login',
+                        style: TextStyle(fontSize: getFontXL(context)),
+                      )
+                    ],
+                  ),
                 )
               ],
             )
