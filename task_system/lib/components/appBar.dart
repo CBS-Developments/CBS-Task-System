@@ -8,6 +8,7 @@ PreferredSizeWidget myAppBar(BuildContext context) {
   return PreferredSize(
     preferredSize: Size.fromHeight(appBarHeight(context)),
     child: AppBar(
+      elevation: 0,
       backgroundColor: Colors.white,
       automaticallyImplyLeading: false,
       title: Text(
