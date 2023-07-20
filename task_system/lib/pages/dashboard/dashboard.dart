@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:task_system/components/appBar.dart';
+import 'package:task_system/components/dash_filter_box.dart';
+import 'package:task_system/components/navigate_text.dart';
+import 'package:task_system/components/search_box.dart';
 import 'package:task_system/drawers/dashboard_drawer.dart';
 
 import '../../sizes/create_MainTask_Sizes.dart';
@@ -19,26 +22,36 @@ class _DashboardState extends State<Dashboard> {
       appBar: myAppBar(context),
       body: Row(
         children: [
-          DashboardDrawer(),
-
+          const DashboardDrawer(),
           Container(
             width: rightSideWidth(context),
             height: getPageHeight(context),
-
             child: Column(
               children: [
+                SizedBox(
+                  height: smallBoxHeight(context),
+                ),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    const NavigateText(
+                        firstText: 'Dashboard/ ',
+                        secText: 'Main Dashboard/ ',
+                        thirdText: 'Internal User',),
 
+                    SearchBox(),
+                  ],
+                ),
+                Row(
+                  children: [
+                    FilterBox()
+                  ],
                 )
               ],
             ),
-
-
           )
-
         ],
       ),
-
     );
   }
 }

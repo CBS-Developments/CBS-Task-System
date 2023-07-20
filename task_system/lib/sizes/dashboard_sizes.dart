@@ -70,3 +70,11 @@ double tabBarWidth(BuildContext context) {
 double drawerSizeBoxWidth(BuildContext context) {
   return (getPageWidth(context) * 0.005) ;
 }
+
+double filterBoxHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.12) ;
+}
+
+double filterBoxWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.38) ;
+}
