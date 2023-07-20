@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:task_system/components/loginBox.dart';
 import 'package:task_system/components/my_button.dart';
+import 'package:task_system/pages/dashboard.dart';
 import 'package:task_system/sizes/loginPage_Sizes.dart';
 
 import '../components/login_textfeild.dart';
@@ -64,7 +65,13 @@ class LoginPage extends StatelessWidget {
                       SizedBox(
                         height: sizeBoxLHeight(context),
                       ),
-                      MyButton(onTap: () {}, childText: 'Login'),
+                      MyButton(onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Dashboard()),
+                        );
+                      }, childText: 'Login'),
                       SizedBox(
                         height: sizeBoxLHeight(context),
                       ),
