@@ -9,9 +9,9 @@ class TaskTabBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child:Row(
+      child: Row(
         children: [
-          TextButton(onPressed: (){}, child: Text('Main Task'))
+          TextButton(onPressed: () {}, child: Text('Main Task'))
         ],
       ),
       padding: EdgeInsets.all(tabPadding(context)),
@@ -40,4 +40,4 @@ class TaskTabBar extends StatelessWidget {
     );
   }
 
-
+}

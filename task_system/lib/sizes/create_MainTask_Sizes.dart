@@ -60,3 +60,19 @@ double drawerIconMargin(BuildContext context) {
 double tabPadding(BuildContext context) {
   return (getPageWidth(context) * 0.0047) ;
 }
+
+double navBoxHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.055) ;
+}
+
+double navBoxWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.3) ;
+}
+
+double navTextFont(BuildContext context) {
+  return (getPageWidth(context) * 0.0043) * (getPageHeight(context) * 0.0043);
+}
+
+double navBoxPadding(BuildContext context) {
+  return (getPageWidth(context) * 0.008) ;
+}
