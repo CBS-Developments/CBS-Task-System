@@ -25,17 +25,12 @@ class MyButton extends StatelessWidget {
         decoration: BoxDecoration(
           color: AppColor.teal,
           borderRadius: BorderRadius.circular(10),
-          border: Border.all(
-            color: Colors.white,
-            width: 1.0,
-          ),
         ),
         child: Center(
           child: Text(
             childText,
             style: TextStyle(
               color: Colors.white,
-              fontWeight: FontWeight.bold,
               fontSize: buttonFont(context),
             ),
           ),

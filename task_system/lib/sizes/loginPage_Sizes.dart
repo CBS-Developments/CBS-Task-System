@@ -71,7 +71,7 @@ double getFontL(BuildContext context) {
 }
 
 double buttonHeight(BuildContext context) {
-  return (getPageHeight(context) * 0.05) ;
+  return (getPageHeight(context) * 0.06) ;
 }
 
 double buttonWidth(BuildContext context) {
@@ -79,6 +79,17 @@ double buttonWidth(BuildContext context) {
 }
 
 double buttonFont(BuildContext context) {
-  return (getPageWidth(context) * 0.0038) * (getPageHeight(context) * 0.0038);
+  return (getPageWidth(context) * 0.0042) * (getPageHeight(context) * 0.0042);
 }
 
+double tileHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.08) ;
+}
+
+double tileWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.14) ;
+}
+
+double tileWidth2(BuildContext context) {
+  return (getPageWidth(context) * 0.1) ;
+}

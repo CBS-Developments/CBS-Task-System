@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 
+import '../colors/appColors.dart';
 import '../sizes/loginPage_Sizes.dart';
 
 class LoginTextField extends StatelessWidget {
@@ -27,10 +28,10 @@ class LoginTextField extends StatelessWidget {
               borderRadius: BorderRadius.circular(10.0),
             ),
             focusedBorder: OutlineInputBorder(
-              borderSide: BorderSide(color: Colors.blueAccent),
+              borderSide: BorderSide(color: AppColor.teal),
             ),
             labelText: labelText,
-            labelStyle: TextStyle(color: Colors.blueAccent,fontSize: getFontL(context))
+            labelStyle: TextStyle(color: AppColor.teal,fontSize: getFontL(context))
         ),
       ),
     );
