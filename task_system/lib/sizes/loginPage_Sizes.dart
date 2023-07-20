@@ -70,3 +70,15 @@ double getFontL(BuildContext context) {
   return (getPageWidth(context) * 0.0045) * (getPageHeight(context) * 0.0045);
 }
 
+double buttonHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.05) ;
+}
+
+double buttonWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.08) ;
+}
+
+double buttonFont(BuildContext context) {
+  return (getPageWidth(context) * 0.0038) * (getPageHeight(context) * 0.0038);
+}
+
