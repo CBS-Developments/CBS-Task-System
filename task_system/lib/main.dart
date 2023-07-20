@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task_system/pages/createMainTask.dart';
+import 'package:task_system/pages/dashboard/dashboard.dart';
 import 'package:task_system/pages/login_page.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 
 
-      home: MainTask(),
+      home: Dashboard(),
 
     );
   }

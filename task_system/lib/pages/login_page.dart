@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:task_system/components/loginBox.dart';
 import 'package:task_system/components/my_button.dart';
-import 'package:task_system/pages/dashboard.dart';
+import 'package:task_system/pages/dashboard/dashboard.dart';
 import 'package:task_system/sizes/loginPage_Sizes.dart';
 
 import '../components/login_textfeild.dart';
