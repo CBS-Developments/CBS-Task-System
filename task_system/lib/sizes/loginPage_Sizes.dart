@@ -46,7 +46,11 @@ double sizeBoxXLHeight(BuildContext context){
 }
 
 double sizeBoxLHeight(BuildContext context){
-  return (MediaQuery.of(context).size.height)*0.02;
+  return (MediaQuery.of(context).size.height)*0.025;
+}
+
+double sizeBoxMHeight(BuildContext context){
+  return (MediaQuery.of(context).size.height)*0.015;
 }
 
 double textFMargin(BuildContext context) {

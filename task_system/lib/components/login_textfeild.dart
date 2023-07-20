@@ -22,14 +22,15 @@ class LoginTextField extends StatelessWidget {
         textInputAction: TextInputAction.next,
         controller: controller,
         decoration: InputDecoration(
-            enabledBorder: const OutlineInputBorder(
+            enabledBorder:  OutlineInputBorder(
               borderSide: BorderSide(color: Colors.grey),
+              borderRadius: BorderRadius.circular(10.0),
             ),
             focusedBorder: OutlineInputBorder(
-              borderSide: BorderSide(color: Colors.green),
+              borderSide: BorderSide(color: Colors.blueAccent),
             ),
             labelText: labelText,
-            labelStyle: TextStyle(color: Colors.green,fontSize: getFontL(context))
+            labelStyle: TextStyle(color: Colors.blueAccent,fontSize: getFontL(context))
         ),
       ),
     );
