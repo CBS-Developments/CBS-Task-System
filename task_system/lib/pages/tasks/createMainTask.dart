@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:task_system/components/appBar.dart';
 import 'package:task_system/components/navigate_text.dart';
+import 'package:task_system/components/search_box.dart';
 import 'package:task_system/drawers/mainTaskDrawer.dart';
 import 'package:task_system/sizes/create_MainTask_Sizes.dart';
 
@@ -25,25 +26,28 @@ class _MainTaskState extends State<MainTask> {
           Container(
             width: rightSideWidth(context),
             height: getPageHeight(context),
-            color: Colors.blueAccent,
+            // color: Colors.blueAccent,
             child: Column(
               children: [
+                SizedBox(height: smallBoxHeight(context),),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    NavigateText(firstText: 'Task Dashboard/', secText: 'Main Task/', thirdText: 'Create Main Task',),
+                    NavigateText(
+                      firstText: 'Task Dashboard/',
+                      secText: 'Main Task/',
+                      thirdText: 'Create Main Task',
+                    ),
+
+
+                     SearchBox()
                   ],
                 ),
-
-
               ],
             ),
-
           )
-
-
         ],
       ),
     );
   }
 }
-

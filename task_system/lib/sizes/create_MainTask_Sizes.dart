@@ -66,7 +66,7 @@ double navBoxHeight(BuildContext context) {
 }
 
 double navBoxWidth(BuildContext context) {
-  return (getPageWidth(context) * 0.3) ;
+  return (getPageWidth(context) * 0.4) ;
 }
 
 double navTextFont(BuildContext context) {
@@ -75,4 +75,25 @@ double navTextFont(BuildContext context) {
 
 double navBoxPadding(BuildContext context) {
   return (getPageWidth(context) * 0.008) ;
+}
+
+
+double serBoxHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.055) ;
+}
+
+double serBoxWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.2) ;
+}
+
+double serTextFont(BuildContext context) {
+  return (getPageWidth(context) * 0.004) * (getPageHeight(context) * 0.004);
+}
+
+double serBoxPadding(BuildContext context) {
+  return (getPageWidth(context) * 0.008) ;
+}
+
+double sizeBoxWidthL(BuildContext context) {
+  return (getPageWidth(context) * 0.2) ;
 }

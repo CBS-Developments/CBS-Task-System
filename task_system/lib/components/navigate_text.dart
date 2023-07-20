@@ -14,7 +14,7 @@ class NavigateText extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: navBoxPadding(context)),
       width: navBoxWidth(context),
       height: navBoxHeight(context),
-      color: Colors.white,
+      // color: Colors.white,
       child: Row(
         children: [
           Text(
