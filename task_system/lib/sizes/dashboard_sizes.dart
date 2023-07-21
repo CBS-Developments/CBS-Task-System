@@ -106,3 +106,7 @@ double notiBoxHeight(BuildContext context) {
 double calBoxHeight(BuildContext context) {
   return (getPageHeight(context) * 0.555) ;
 }
+
+double calBoxWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.25) ;
+}

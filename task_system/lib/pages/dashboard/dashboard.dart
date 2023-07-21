@@ -53,7 +53,7 @@ class _DashboardState extends State<Dashboard> {
                     Container(
                       margin: EdgeInsets.symmetric(
                           horizontal: addDPadding(context)),
-                      //rcolor: Colors.green,
+                      //color: Colors.green,
                       width: leftBoxWidth(context),
                       height: leftBoxHeight(context),
                       child: Column(
@@ -73,48 +73,59 @@ class _DashboardState extends State<Dashboard> {
                       ),
                     ),
                     Container(
-                        margin: EdgeInsets.symmetric(
-                            horizontal: addDPadding(context)),
-                        //color: Colors.amber,
-                        width: rightBoxWidth(context),
-                        height: rightBoxHeight(context),
-                    child: Column(
-                      children: [
-                        Container(
-                          color: Colors.grey,
-                          width: addDRWidth(context),
-                          height: notiBoxHeight(context),
-                          child: Row(
-                            children: [
-                              Text('Notifications',
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold
-                              ),),
-                              Row(
-                                children: [
-                                  Icon(Icons.notifications_active)
-                                ],
-                              )
-                            ],
+                      margin: EdgeInsets.symmetric(
+                          horizontal: addDPadding(context)),
+                      //color: Colors.amber,
+                      width: rightBoxWidth(context),
+                      height: rightBoxHeight(context),
+                      child: Column(
+                        children: [
+                          Container(
+                            width: calBoxWidth(context),
+                            height: notiBoxHeight(context),
+                            decoration: BoxDecoration(
+                              color: Colors.grey,
+                              borderRadius: BorderRadius.circular(8),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.black.withOpacity(0.2),
+                                  offset: Offset(0, 2),
+                                  blurRadius: 4,
+                                ),
+                              ],
+                            ),
+                            child: const Stack(
+                              alignment: Alignment.topLeft,
+                              children: [
+                                Padding(
+                                  padding: EdgeInsets.only(
+                                      left: 8.0, top: 8.0),
+                                  child: Text(
+                                    'Notifications',
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ),
+                                Positioned(
+                                  top: 8.0,
+                                  right: 8.0,
+                                  child: Icon(Icons.notifications_active),
+                                ),
+                              ],
+                            ),
                           ),
-                        ),
-
-                        SizedBox( height: smallBoxHeight(context),),
-
-                        Container(
-                          child: Column(
+                          SizedBox(
+                            height: smallBoxHeight(context),
+                          ),
+                          const Column(
                             children: [
                               AddCalendar(),
                             ],
-                          ),
-                        )
-
-                      ],
-                    ),),
-
-
-
-
+                          )
+                        ],
+                      ),
+                    ),
                   ],
                 )
 

@@ -14,7 +14,7 @@ class AddCalendar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      width: addDRWidth(context),
+      width: calBoxWidth(context),
       height: calBoxHeight(context),
       child: SingleChildScrollView(
         child: TableCalendar(
