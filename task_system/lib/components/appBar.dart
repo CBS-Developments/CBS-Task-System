@@ -2,6 +2,7 @@ import 'dart:js';
 
 import 'package:flutter/material.dart';
 
+import '../pages/login_page.dart';
 import '../sizes/create_MainTask_Sizes.dart';
 
 PreferredSizeWidget myAppBar(BuildContext context) {
@@ -19,6 +20,23 @@ PreferredSizeWidget myAppBar(BuildContext context) {
           fontWeight: FontWeight.bold,
         ),
       ),
+
+      actions: [
+        IconButton(
+          // iconSize: appBarIconSize(context),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => LoginPage()),
+            );
+          },
+          icon: Icon(
+            Icons.logout_outlined,
+            color: Colors.white,
+          ),
+          tooltip: 'Logout',
+        ),
+      ],
     ),
   );
 }

@@ -9,6 +9,10 @@ class AppColor{
   static  Color tabBlueSelect = const Color(0xFF3A36DB);
   static  Color prioBlue = const Color(0xFF009FA9);
   static  Color topUr = const Color(0xFF810000);
+  static  Color urgent24 = const Color(0xFF810076);
+  static  Color low = const Color(0xFF001181);
+  static  Color regular = const Color(0xFF118100);
+  static  Color medium = const Color(0xFFDCBF00);
 
 
 

@@ -8,6 +8,7 @@ import 'package:task_system/drawers/mainTaskDrawer.dart';
 import 'package:task_system/sizes/create_MainTask_Sizes.dart';
 import 'package:task_system/tabs/task_tab.dart';
 
+import '../../components/my_button.dart';
 import '../../sizes/dashboard_sizes.dart';
 
 class MainTask extends StatefulWidget {
@@ -162,22 +163,78 @@ class _MainTaskState extends State<MainTask> {
                     SizedBox(
                       width: sizeBoxWidthS(context),
                     ),
-                    Container(
-                      color: Colors.yellowAccent,
-                      height: mainBoxHeight(context),
-                      width: addDRWidth(context),
-                      child: Column(
-                        children: [
-                          RadioButtonContainer(
-                            title: 'Top Urgent',
-                            radioColor: AppColor.prioBlue,
-                            titleColor: AppColor.prioBlue,
-                            value: 1,
-                            groupValue: 1,
-                            onChanged: (int? value) {},
-                          )
-                        ],
-                      ),
+
+
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          color: Colors.white,
+                          height: addDRHeight(context),
+                          width: addDRWidth(context),
+                          child: Column(
+                            children: [
+                              RadioButtonContainer(
+                                title: 'Top Urgent',
+                                radioColor: AppColor.topUr,
+                                titleColor: AppColor.topUr,
+                                value: 1,
+                                groupValue: 1,
+                                onChanged: (int? value) {},
+                              ),
+                              RadioButtonContainer(
+                                title: 'Urgent Within 24hr',
+                                radioColor: AppColor.urgent24,
+                                titleColor: AppColor.urgent24,
+                                value: 2,
+                                groupValue: 2,
+                                onChanged: (int? value) {},
+                              ),
+                              RadioButtonContainer(
+                                title: 'Low',
+                                radioColor: AppColor.low,
+                                titleColor: AppColor.low,
+                                value: 3,
+                                groupValue: 3,
+                                onChanged: (int? value) {},
+                              ),
+                              RadioButtonContainer(
+                                title: 'Medium',
+                                radioColor: AppColor.medium,
+                                titleColor: AppColor.medium,
+                                value: 4,
+                                groupValue: 4,
+                                onChanged: (int? value) {},
+                              ),
+                              RadioButtonContainer(
+                                title: 'Regular',
+                                radioColor: AppColor.regular,
+                                titleColor: AppColor.regular,
+                                value: 5,
+                                groupValue: 5,
+                                onChanged: (int? value) {},
+                              ),
+                            ],
+                          ),
+                        ),
+
+                        SizedBox(
+                          height: smallBoxHeight(context),
+                        ),
+
+                        Container(
+                          height: buttonCHeight(context),
+                          width: buttonCWidth(context),
+                          // color: Colors.blue,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              MyButton(onTap: () {  }, childText: 'Save',),
+                              MyButton(onTap: () {  }, childText: 'Cancel',)
+                            ],
+                          ),
+                        )
+                      ],
                     )
                   ],
                 )
