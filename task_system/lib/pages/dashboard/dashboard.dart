@@ -53,7 +53,7 @@ class _DashboardState extends State<Dashboard> {
                     Container(
                       margin: EdgeInsets.symmetric(
                           horizontal: addDPadding(context)),
-                      //rcolor: Colors.green,
+                      //color: Colors.green,
                       width: leftBoxWidth(context),
                       height: leftBoxHeight(context),
                       child: Column(
