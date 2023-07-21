@@ -80,7 +80,7 @@ double filterBoxWidth(BuildContext context) {
 }
 
 double leftBoxHeight(BuildContext context) {
-  return (getPageHeight(context) * 0.8) ;
+  return (getPageHeight(context) * 0.83) ;
 }
 
 double leftBoxWidth(BuildContext context) {
@@ -88,7 +88,7 @@ double leftBoxWidth(BuildContext context) {
 }
 
 double rightBoxHeight(BuildContext context) {
-  return (getPageHeight(context) * 0.8) ;
+  return (getPageHeight(context) * 0.83) ;
 }
 
 double rightBoxWidth(BuildContext context) {
@@ -96,5 +96,13 @@ double rightBoxWidth(BuildContext context) {
 }
 
 double rightDownBoxHeight(BuildContext context) {
-  return (getPageHeight(context) * 0.64) ;
+  return (getPageHeight(context) * 0.68) ;
+}
+
+double notiBoxHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.24) ;
+}
+
+double calBoxHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.555) ;
 }

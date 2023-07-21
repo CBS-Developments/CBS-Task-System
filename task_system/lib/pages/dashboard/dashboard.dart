@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_system/components/add_Calendar.dart';
 import 'package:task_system/components/appBar.dart';
 import 'package:task_system/components/dash_filter_box.dart';
 import 'package:task_system/components/navigate_text.dart';
@@ -52,7 +53,7 @@ class _DashboardState extends State<Dashboard> {
                     Container(
                       margin: EdgeInsets.symmetric(
                           horizontal: addDPadding(context)),
-                      color: Colors.green,
+                      //rcolor: Colors.green,
                       width: leftBoxWidth(context),
                       height: leftBoxHeight(context),
                       child: Column(
@@ -66,7 +67,7 @@ class _DashboardState extends State<Dashboard> {
                                 horizontal: addDPadding(context)),
                             color: Colors.lightBlue,
                             height: rightDownBoxHeight(context),
-                            width: addDWidth(context),
+                            width: leftBoxWidth(context),
                           )
                         ],
                       ),
@@ -74,9 +75,46 @@ class _DashboardState extends State<Dashboard> {
                     Container(
                         margin: EdgeInsets.symmetric(
                             horizontal: addDPadding(context)),
-                        color: Colors.amber,
+                        //color: Colors.amber,
                         width: rightBoxWidth(context),
-                        height: rightBoxHeight(context))
+                        height: rightBoxHeight(context),
+                    child: Column(
+                      children: [
+                        Container(
+                          color: Colors.grey,
+                          width: addDRWidth(context),
+                          height: notiBoxHeight(context),
+                          child: Row(
+                            children: [
+                              Text('Notifications',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold
+                              ),),
+                              Row(
+                                children: [
+                                  Icon(Icons.notifications_active)
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+
+                        SizedBox( height: smallBoxHeight(context),),
+
+                        Container(
+                          child: Column(
+                            children: [
+                              AddCalendar(),
+                            ],
+                          ),
+                        )
+
+                      ],
+                    ),),
+
+
+
+
                   ],
                 )
 

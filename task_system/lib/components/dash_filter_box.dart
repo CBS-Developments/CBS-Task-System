@@ -12,7 +12,7 @@ class FilterBox extends StatelessWidget {
       margin: EdgeInsets.symmetric(
           horizontal: addDPadding(context)),
       color: Colors.teal,
-      width: filterBoxWidth(context),
+      width: leftBoxWidth(context),
       height: filterBoxHeight(context),
     );
   }
