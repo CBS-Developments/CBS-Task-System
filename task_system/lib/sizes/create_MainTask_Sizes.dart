@@ -103,11 +103,11 @@ double sizeBoxWidthL(BuildContext context) {
 }
 
 double addDWidth(BuildContext context) {
-  return (getPageWidth(context) * 0.5) ;
+  return (getPageWidth(context) * 0.6) ;
 }
 
 double addDRWidth(BuildContext context) {
-  return (getPageWidth(context) * 0.23) ;
+  return (getPageWidth(context) * 0.15) ;
 }
 
 double sizeBoxWidthS(BuildContext context) {
@@ -120,4 +120,17 @@ double addDPadding(BuildContext context) {
 
 double addDRPadding(BuildContext context) {
   return (getPageWidth(context) * 0.005) ;
+}
+
+
+double radioBoxHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.065) ;
+}
+
+double radioBoxWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.2) ;
+}
+
+double radioTextFont(BuildContext context) {
+  return (getPageWidth(context) * 0.004) * (getPageHeight(context) * 0.004);
 }
