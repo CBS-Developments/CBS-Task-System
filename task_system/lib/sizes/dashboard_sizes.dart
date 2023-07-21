@@ -76,5 +76,5 @@ double filterBoxHeight(BuildContext context) {
 }
 
 double filterBoxWidth(BuildContext context) {
-  return (getPageWidth(context) * 0.38) ;
+  return (getPageWidth(context) * 0.5) ;
 }

@@ -9,7 +9,9 @@ class FilterBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white,
+      margin: EdgeInsets.symmetric(
+          horizontal: addDPadding(context)),
+      color: Colors.teal,
       width: filterBoxWidth(context),
       height: filterBoxHeight(context),
     );

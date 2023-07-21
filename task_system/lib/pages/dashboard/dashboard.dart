@@ -42,13 +42,30 @@ class _DashboardState extends State<Dashboard> {
                     SearchBox(),
                   ],
                 ),
+
                 Row(
                   children: [
                     FilterBox()
                   ],
-                )
+                ),
+
+                SizedBox(height: smallBoxHeight(context),),
+
+                Row(
+                  children: [
+                    Container(
+                      margin: EdgeInsets.symmetric(
+                          horizontal: addDPadding(context)),
+                      color: Colors.lightBlue,
+                      height: mainBoxHeight(context),
+                      width: addDWidth(context),
+                    )
+                  ],
+                ),
               ],
             ),
+
+
           )
         ],
       ),
