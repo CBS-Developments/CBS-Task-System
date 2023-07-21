@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:task_system/colors/appColors.dart';
 import 'package:task_system/components/appBar.dart';
 import 'package:task_system/components/navigate_text.dart';
+import 'package:task_system/components/redio_button.dart';
 import 'package:task_system/components/search_box.dart';
 import 'package:task_system/drawers/mainTaskDrawer.dart';
 import 'package:task_system/sizes/create_MainTask_Sizes.dart';
@@ -48,7 +50,7 @@ class _MainTaskState extends State<MainTask> {
                   height: smallBoxHeight(context),
                 ),
                 TaskTabBar(
-                  firstButtonColor: Colors.deepPurple,
+                  firstButtonColor: AppColor.tabBlueSelect,
                   secButtonColor: Colors.black,
                   thirdButtonColor: Colors.black,
                   fourthButtonColor: Colors.black,
@@ -93,11 +95,10 @@ class _MainTaskState extends State<MainTask> {
                               ],
                             ),
                           ),
-
                           TextButton(
                             style: TextButton.styleFrom(
                               foregroundColor:
-                              Colors.blue, // Set the text color here
+                                  Colors.blue, // Set the text color here
                             ),
                             onPressed: () {},
                             child: Row(
@@ -105,7 +106,7 @@ class _MainTaskState extends State<MainTask> {
                               children: [
                                 Icon(
                                   Icons.add_circle_outline,
-                                  color: Colors.blue,
+                                  color: AppColor.darkBlueC,
                                   size: drawerIconScale(context),
                                   // size: drawerIconScale(context),
                                 ),
@@ -113,13 +114,14 @@ class _MainTaskState extends State<MainTask> {
                                 Text(
                                   'Create Sub Task',
                                   style: TextStyle(
-                                      fontSize: drawerFontLarge(context),
-                                      fontWeight: FontWeight.bold),
+                                    fontSize: drawerFontLarge(context),
+                                    fontWeight: FontWeight.bold,
+                                    color: AppColor.darkBlueC,
+                                  ),
                                 ),
                               ],
                             ),
                           ),
-
                         ],
                       ),
                     ),
@@ -130,7 +132,8 @@ class _MainTaskState extends State<MainTask> {
                       // color: Colors.blueGrey,
                       height: navBoxHeight(context),
                       width: addDRWidth(context),
-                      padding: EdgeInsets.symmetric(horizontal: navBoxPadding(context)),
+                      padding: EdgeInsets.symmetric(
+                          horizontal: navBoxPadding(context)),
                       child: Row(
                         children: [
                           Text(
@@ -147,7 +150,6 @@ class _MainTaskState extends State<MainTask> {
                 SizedBox(
                   height: smallBoxHeight(context),
                 ),
-
                 Row(
                   children: [
                     Container(
@@ -156,24 +158,29 @@ class _MainTaskState extends State<MainTask> {
                       color: Colors.greenAccent,
                       height: mainBoxHeight(context),
                       width: addDWidth(context),
-
                     ),
-
                     SizedBox(
                       width: sizeBoxWidthS(context),
                     ),
-
                     Container(
                       color: Colors.yellowAccent,
                       height: mainBoxHeight(context),
                       width: addDRWidth(context),
-
-
+                      child: Column(
+                        children: [
+                          RadioButtonContainer(
+                            title: 'Top Urgent',
+                            radioColor: AppColor.prioBlue,
+                            titleColor: AppColor.prioBlue,
+                            value: 1,
+                            groupValue: 1,
+                            onChanged: (int? value) {},
+                          )
+                        ],
+                      ),
                     )
                   ],
                 )
-
-
               ],
             ),
           )
