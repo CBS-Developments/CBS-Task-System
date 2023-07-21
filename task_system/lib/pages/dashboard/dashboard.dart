@@ -82,7 +82,7 @@ class _DashboardState extends State<Dashboard> {
                       children: [
                         Container(
                           color: Colors.grey,
-                          width: addDRWidth(context),
+                          width: calBoxWidth(context),
                           height: notiBoxHeight(context),
                           child: Row(
                             children: [
