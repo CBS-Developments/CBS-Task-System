@@ -35,37 +35,72 @@ class _DashboardState extends State<Dashboard> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     const NavigateText(
-                        firstText: 'Dashboard/ ',
-                        secText: 'Main Dashboard/ ',
-                        thirdText: 'Internal User',),
-
+                      firstText: 'Dashboard/ ',
+                      secText: 'Main Dashboard/ ',
+                      thirdText: 'Internal User',
+                    ),
                     SearchBox(),
                   ],
                 ),
 
-                Row(
-                  children: [
-                    FilterBox()
-                  ],
+                SizedBox(
+                  height: smallBoxHeight(context),
                 ),
-
-                SizedBox(height: smallBoxHeight(context),),
 
                 Row(
                   children: [
                     Container(
                       margin: EdgeInsets.symmetric(
                           horizontal: addDPadding(context)),
-                      color: Colors.lightBlue,
-                      height: mainBoxHeight(context),
-                      width: addDWidth(context),
-                    )
+                      color: Colors.green,
+                      width: leftBoxWidth(context),
+                      height: leftBoxHeight(context),
+                      child: Column(
+                        children: [
+                          FilterBox(),
+                          SizedBox(
+                            height: smallBoxHeight(context),
+                          ),
+                          Container(
+                            margin: EdgeInsets.symmetric(
+                                horizontal: addDPadding(context)),
+                            color: Colors.lightBlue,
+                            height: rightDownBoxHeight(context),
+                            width: addDWidth(context),
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
+                        margin: EdgeInsets.symmetric(
+                            horizontal: addDPadding(context)),
+                        color: Colors.amber,
+                        width: rightBoxWidth(context),
+                        height: rightBoxHeight(context))
                   ],
-                ),
+                )
+
+                // Row(
+                //   children: [
+                //     FilterBox()
+                //   ],
+                // ),
+                //
+                // SizedBox(height: smallBoxHeight(context),),
+                //
+                // Row(
+                //   children: [
+                //     Container(
+                //       margin: EdgeInsets.symmetric(
+                //           horizontal: addDPadding(context)),
+                //       color: Colors.lightBlue,
+                //       height: mainBoxHeight(context),
+                //       width: addDWidth(context),
+                //     )
+                //   ],
+                // ),
               ],
             ),
-
-
           )
         ],
       ),

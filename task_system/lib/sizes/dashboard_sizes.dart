@@ -78,3 +78,23 @@ double filterBoxHeight(BuildContext context) {
 double filterBoxWidth(BuildContext context) {
   return (getPageWidth(context) * 0.5) ;
 }
+
+double leftBoxHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.8) ;
+}
+
+double leftBoxWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.55) ;
+}
+
+double rightBoxHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.8) ;
+}
+
+double rightBoxWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.22) ;
+}
+
+double rightDownBoxHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.64) ;
+}
