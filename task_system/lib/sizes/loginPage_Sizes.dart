@@ -9,7 +9,7 @@ double getPageHeight(BuildContext context) {
 }
 
 double getXLBoxHeight(BuildContext context){
-  return (MediaQuery.of(context).size.height)*0.075;
+  return (MediaQuery.of(context).size.height)*0.07;
 }
 
 double getFontXXXL(BuildContext context) {
