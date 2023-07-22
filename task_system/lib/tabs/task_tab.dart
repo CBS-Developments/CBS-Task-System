@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:task_system/colors/appColors.dart';
+import 'package:task_system/pages/tasks/createMainTask.dart';
+import 'package:task_system/pages/tasks/createSubTask.dart';
 
 import '../sizes/create_MainTask_Sizes.dart';
 import '../sizes/dashboard_sizes.dart';
@@ -31,7 +33,12 @@ class TaskTabBar extends StatelessWidget {
             style: TextButton.styleFrom(
               foregroundColor: firstButtonColor, // Set the text color here
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => MainTask()),
+              );
+            },
             child: Text(
               'Main Task',
               style: TextStyle(fontSize: navTextFont(context)),
@@ -41,7 +48,12 @@ class TaskTabBar extends StatelessWidget {
             style: TextButton.styleFrom(
               foregroundColor: secButtonColor, // Set the text color here
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => SubTask()),
+              );
+            },
             child: Text(
               'Sub Task',
               style: TextStyle(fontSize: navTextFont(context)),

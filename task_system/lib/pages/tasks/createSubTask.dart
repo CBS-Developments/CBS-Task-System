@@ -43,7 +43,7 @@ class _SubTaskState extends State<SubTask> {
                     NavigateText(
                       firstText: 'Task Dashboard/',
                       secText: 'Main Task/',
-                      thirdText: 'Create Main Task',
+                      thirdText: 'Create Sub Task',
                     ),
                     SearchBox()
                   ],
@@ -52,8 +52,8 @@ class _SubTaskState extends State<SubTask> {
                   height: smallBoxHeight(context),
                 ),
                 TaskTabBar(
-                  firstButtonColor: AppColor.tabBlueSelect,
-                  secButtonColor: Colors.black,
+                  firstButtonColor: Colors.black,
+                  secButtonColor: AppColor.tabBlueSelect,
                   thirdButtonColor: Colors.black,
                   fourthButtonColor: Colors.black,
                   fivethButtonColor: Colors.black,
