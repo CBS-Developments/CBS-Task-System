@@ -146,3 +146,20 @@ double buttonCWidth(BuildContext context) {
 double buttonCHeight(BuildContext context) {
   return (getPageHeight(context) * 0.2) ;
 }
+
+
+double mainBoxTextWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.2525) ;
+}
+
+double mainBoxTextFont(BuildContext context) {
+  return (getPageWidth(context) * 0.004) * (getPageHeight(context) * 0.004);
+}
+
+double mainBoxTextPadding(BuildContext context) {
+  return (getPageWidth(context) * 0.0065) ;
+}
+
+double mainBoxTextHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.05) ;
+}

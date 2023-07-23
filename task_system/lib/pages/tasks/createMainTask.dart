@@ -8,6 +8,7 @@ import 'package:task_system/drawers/mainTaskDrawer.dart';
 import 'package:task_system/sizes/create_MainTask_Sizes.dart';
 import 'package:task_system/tabs/task_tab.dart';
 
+import '../../components/mainbox_Text.dart';
 import '../../components/my_button.dart';
 import '../../sizes/dashboard_sizes.dart';
 
@@ -159,6 +160,13 @@ class _MainTaskState extends State<MainTask> {
                       color: Colors.greenAccent,
                       height: mainBoxHeight(context),
                       width: addDWidth(context),
+                      child: Column(
+                        children: [
+                          Row(children: [
+                            MainBoxText(text: 'First Name:',)
+                          ],)
+                        ],
+                      ),
                     ),
                     SizedBox(
                       width: sizeBoxWidthS(context),
