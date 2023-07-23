@@ -161,7 +161,7 @@ double mainBoxTextPadding(BuildContext context) {
 }
 
 double mainBoxTextHeight(BuildContext context) {
-  return (getPageHeight(context) * 0.05) ;
+  return (getPageHeight(context) * 0.052) ;
 }
 
 double mainBoxTextFiHalfWidth(BuildContext context) {

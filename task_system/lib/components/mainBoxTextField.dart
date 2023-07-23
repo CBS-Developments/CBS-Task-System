@@ -22,7 +22,7 @@ class MainBoxTextField extends StatelessWidget {
         decoration: InputDecoration(
             enabledBorder:  OutlineInputBorder(
               borderSide: BorderSide(color: Colors.grey.shade300),
-              borderRadius: BorderRadius.circular(10.0),
+              borderRadius: BorderRadius.circular(5.0),
             ),
             focusedBorder: OutlineInputBorder(
               borderSide: BorderSide(color: Colors.grey.shade500),
