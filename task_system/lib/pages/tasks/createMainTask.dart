@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:task_system/colors/appColors.dart';
 import 'package:task_system/components/appBar.dart';
+import 'package:task_system/components/mainBoxTextField.dart';
 import 'package:task_system/components/navigate_text.dart';
 import 'package:task_system/components/redio_button.dart';
 import 'package:task_system/components/search_box.dart';
@@ -162,9 +163,19 @@ class _MainTaskState extends State<MainTask> {
                       width: addDWidth(context),
                       child: Column(
                         children: [
-                          Row(children: [
-                            MainBoxText(text: 'First Name:',)
-                          ],)
+                          Row(
+                            children: [
+                            MainBoxText(text: 'First Name:',),
+                            MainBoxText(text: 'Last Name:',)
+                          ],),
+                          
+                          Row(
+                            children: [
+                              MainBoxTextField(
+                                width: mainBoxTextFiHalfWidth(context), hintText: 'First Name',
+                              )
+                            ],
+                          )
                         ],
                       ),
                     ),

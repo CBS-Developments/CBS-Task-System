@@ -14,7 +14,6 @@ class SearchBox extends StatelessWidget {
       // color: Colors.white,
       child: TextField(
         controller: searchController,
-        // textAlignVertical: TextAlignVertical.bottom,
         textAlign: TextAlign.start,
         textAlignVertical: TextAlignVertical.bottom,
         decoration: InputDecoration(

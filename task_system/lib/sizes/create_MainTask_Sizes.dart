@@ -149,11 +149,11 @@ double buttonCHeight(BuildContext context) {
 
 
 double mainBoxTextWidth(BuildContext context) {
-  return (getPageWidth(context) * 0.2525) ;
+  return (getPageWidth(context) * 0.275) ;
 }
 
 double mainBoxTextFont(BuildContext context) {
-  return (getPageWidth(context) * 0.004) * (getPageHeight(context) * 0.004);
+  return (getPageWidth(context) * 0.0041) * (getPageHeight(context) * 0.0041);
 }
 
 double mainBoxTextPadding(BuildContext context) {
@@ -162,4 +162,20 @@ double mainBoxTextPadding(BuildContext context) {
 
 double mainBoxTextHeight(BuildContext context) {
   return (getPageHeight(context) * 0.05) ;
+}
+
+double mainBoxTextFiHalfWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.275) ;
+}
+
+double mainBoxTextFiFont(BuildContext context) {
+  return (getPageWidth(context) * 0.004) * (getPageHeight(context) * 0.004);
+}
+
+double mainBoxTextFiPadding(BuildContext context) {
+  return (getPageWidth(context) * 0.0065) ;
+}
+
+double mainBoxTextFiHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.055) ;
 }
