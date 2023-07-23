@@ -158,7 +158,7 @@ class _MainTaskState extends State<MainTask> {
                     Container(
                       margin: EdgeInsets.symmetric(
                           horizontal: addDPadding(context)),
-                      color: Colors.greenAccent,
+                      color: Colors.white,
                       height: mainBoxHeight(context),
                       width: addDWidth(context),
                       child: Column(
@@ -186,6 +186,82 @@ class _MainTaskState extends State<MainTask> {
                           Row(
                             children: [
                               MainBoxText(text: 'Company:')
+                            ],
+                          ),
+
+                          Row(
+                            children: [
+                              MainBoxTextField(
+                                width: mainBoxTextFiFullWidth(context),
+                                  hintText: 'Company name'),
+                            ],
+                          ),
+
+                          Row(
+                            children: [
+                              MainBoxText(text: 'Task Title:')
+                            ],
+                          ),
+
+                          Row(
+                            children: [
+                              MainBoxTextField(
+                                  width: mainBoxTextFiFullWidth(context),
+                                  hintText: 'Task Title'),
+                            ],
+                          ),
+
+                          Row(
+                            children: [
+                              MainBoxText(text: 'Description:')
+                            ],
+                          ),
+
+                          Row(
+                            children: [
+                              MainBoxTextField(
+                                  width: mainBoxTextFiFullWidth(context),
+                                  hintText: 'Add Description'),
+                            ],
+                          ),
+
+                          Row(
+                            children: [
+                              MainBoxText(text: 'Source From:',),
+                              MainBoxText(text: 'Assign To:',)
+                            ],),
+
+                          Row(
+                            children: [
+                              MainBoxTextField(
+                                width: mainBoxTextFiHalfWidth(context),
+                                hintText: '',
+                              ),
+
+                              MainBoxTextField(
+                                width: mainBoxTextFiHalfWidth(context),
+                                hintText: '',
+                              ),
+                            ],
+                          ),
+
+                          Row(
+                            children: [
+                              MainBoxText(text: 'Start Date:',),
+                              MainBoxText(text: 'Due Date:',)
+                            ],),
+
+                          Row(
+                            children: [
+                              MainBoxTextField(
+                                width: mainBoxTextFiHalfWidth(context),
+                                hintText: '',
+                              ),
+
+                              MainBoxTextField(
+                                width: mainBoxTextFiHalfWidth(context),
+                                hintText: '',
+                              ),
                             ],
                           ),
 

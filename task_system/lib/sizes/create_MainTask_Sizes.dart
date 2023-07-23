@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 double getPageWidth(BuildContext context) {
   return MediaQuery.of(context).size.width;
 }
@@ -167,6 +166,11 @@ double mainBoxTextHeight(BuildContext context) {
 double mainBoxTextFiHalfWidth(BuildContext context) {
   return (getPageWidth(context) * 0.275) ;
 }
+
+double mainBoxTextFiFullWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.55) ;
+}
+
 
 double mainBoxTextFiFont(BuildContext context) {
   return (getPageWidth(context) * 0.004) * (getPageHeight(context) * 0.004);
