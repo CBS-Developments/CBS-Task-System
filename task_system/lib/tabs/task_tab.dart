@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task_system/colors/appColors.dart';
+import 'package:task_system/pages/tasks/completedTask.dart';
 import 'package:task_system/pages/tasks/createMainTask.dart';
 import 'package:task_system/pages/tasks/createSubTask.dart';
 
@@ -63,7 +64,12 @@ class TaskTabBar extends StatelessWidget {
             style: TextButton.styleFrom(
               foregroundColor: thirdButtonColor, // Set the text color here
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => CompletedTask()),
+              );
+            },
             child: Text(
               'Completed Task',
               style: TextStyle(fontSize: navTextFont(context)),

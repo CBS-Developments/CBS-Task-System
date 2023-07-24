@@ -40,7 +40,7 @@ class _CompletedTaskState extends State<CompletedTask> {
                       NavigateText(
                         firstText: 'Task Dashboard/',
                         secText: 'Main Task/',
-                        thirdText: 'Create Main Task',
+                        thirdText: 'Completed Task',
                       ),
                       SearchBox()
                     ],
