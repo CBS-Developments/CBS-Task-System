@@ -18,6 +18,7 @@ import '../../sizes/dashboard_sizes.dart';
 class MainTask extends StatefulWidget {
 
   TextEditingController startDateController = TextEditingController();
+  TextEditingController dueDateController = TextEditingController();
 
    MainTask({Key? key}) : super(key: key);
 
@@ -275,7 +276,8 @@ class _MainTaskState extends State<MainTask> {
                           ),
                           Row(
                             children: [
-                              DatePickerBox(controller: widget.startDateController),
+                              DatePickerBox(controller: widget.startDateController, hintText: 'Enter Start Date',),
+                              DatePickerBox(controller: widget.dueDateController, hintText: 'Enter Due Date',),
 
                             ],
                           ),
