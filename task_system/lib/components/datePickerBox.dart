@@ -115,8 +115,8 @@ class _DatePickerBoxState extends State<DatePickerBox> {
           icon: Icon(Icons.calendar_today,size: drawerIconScale(context),), // Icon of the text field
           hintText: widget.hintText,
           hintStyle: TextStyle(fontSize: mainBoxTextFiFont(context)),
-          contentPadding: EdgeInsets.only(bottom: mainBoxTextFiPadding(context))
-          // border: InputBorder.none,
+          contentPadding: EdgeInsets.only(bottom: mainBoxTextFiPadding(context)),
+           border: InputBorder.none,
           // Remove the default TextField border
         ),
         readOnly: true, // When true, the user cannot edit the text

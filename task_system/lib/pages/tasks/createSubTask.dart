@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 
 import '../../colors/appColors.dart';
 import '../../components/appBar.dart';
+import '../../components/datePickerBox.dart';
+import '../../components/dropDownBox.dart';
+import '../../components/mainBoxTextField.dart';
+import '../../components/mainbox_Text.dart';
 import '../../components/my_button.dart';
 import '../../components/navigate_text.dart';
 import '../../components/redio_button.dart';
@@ -12,7 +16,10 @@ import '../../sizes/dashboard_sizes.dart';
 import '../../tabs/task_tab.dart';
 
 class SubTask extends StatefulWidget {
-  const SubTask({Key? key}) : super(key: key);
+  TextEditingController startDateControllerSub = TextEditingController();
+  TextEditingController dueDateControllerSub = TextEditingController();
+
+   SubTask({Key? key}) : super(key: key);
 
   @override
   State<SubTask> createState() => _SubTaskState();
@@ -157,9 +164,102 @@ class _SubTaskState extends State<SubTask> {
                     Container(
                       margin: EdgeInsets.symmetric(
                           horizontal: addDPadding(context)),
-                      color: Colors.greenAccent,
+                      color: Colors.white,
                       height: mainBoxHeight(context),
                       width: addDWidth(context),
+                      child: Column(
+                        children: [
+
+                          Row(
+                            children: [MainBoxText(text: 'Company:')],
+                          ),
+                          Row(
+                            children: [
+                              MainBoxTextField(
+                                  width: mainBoxTextFiFullWidth(context),
+                                  hintText: 'Company Name'),
+                            ],
+                          ),
+                          Row(
+                            children: [MainBoxText(text: 'Sub Task Title:')],
+                          ),
+                          Row(
+                            children: [
+                              MainBoxTextField(
+                                  width: mainBoxTextFiFullWidth(context),
+                                  hintText: 'Sub Task Title'),
+                            ],
+                          ),
+                          Row(
+                            children: [MainBoxText(text: 'Description:')],
+                          ),
+                          Row(
+                            children: [
+                              MainBoxTextField(
+                                  width: mainBoxTextFiFullWidth(context),
+                                  hintText: 'Add Description'),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              MainBoxText(
+                                text: 'Source From:',
+                              ),
+                              MainBoxText(
+                                text: 'Assign To:',
+                              )
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              DropDownBox(
+                                  width: dropDownWidth(context),
+                                  dropdownItems: [
+                                    'Item 1',
+                                    'Item 2',
+                                    'Item 3',
+                                    'Item 4'
+                                  ],
+                                  value: 'Item 1',
+                                  onChanged: (newValue) {
+                                    // Handle changes in selected item here
+                                    print('Selected Item: $newValue');
+                                  }),
+
+                              DropDownBox(
+                                  width: dropDownWidth(context),
+                                  dropdownItems: [
+                                    'Item 1',
+                                    'Item 2',
+                                    'Item 3',
+                                    'Item 4'
+                                  ],
+                                  value: 'Item 1',
+                                  onChanged: (newValue) {
+                                    // Handle changes in selected item here
+                                    print('Selected Item: $newValue');
+                                  }),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              MainBoxText(
+                                text: 'Start Date:',
+                              ),
+                              MainBoxText(
+                                text: 'Due Date:',
+                              )
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              DatePickerBox(controller: widget.startDateControllerSub, hintText: 'Enter Start Date',),
+                              DatePickerBox(controller: widget.dueDateControllerSub, hintText: 'Enter Due Date',),
+
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                     SizedBox(
                       width: sizeBoxWidthS(context),

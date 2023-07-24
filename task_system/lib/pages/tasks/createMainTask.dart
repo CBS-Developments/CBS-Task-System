@@ -200,7 +200,7 @@ class _MainTaskState extends State<MainTask> {
                             children: [
                               MainBoxTextField(
                                   width: mainBoxTextFiFullWidth(context),
-                                  hintText: 'Company name'),
+                                  hintText: 'Company Name'),
                             ],
                           ),
                           Row(
