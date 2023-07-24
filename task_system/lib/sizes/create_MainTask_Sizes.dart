@@ -180,6 +180,23 @@ double mainBoxTextFiPadding(BuildContext context) {
   return (getPageWidth(context) * 0.0065) ;
 }
 
+
+double dropDownMargin(BuildContext context) {
+  return (getPageWidth(context) * 0.0075) ;
+}
+
+double dropDownPadding(BuildContext context) {
+  return (getPageWidth(context) * 0.0085) ;
+}
+
+double dropDownWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.26) ;
+}
+
+double dropDownINWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.24) ;
+}
+
 double mainBoxTextFiHeight(BuildContext context) {
   return (getPageHeight(context) * 0.055) ;
 }

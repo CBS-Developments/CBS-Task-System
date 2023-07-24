@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:task_system/colors/appColors.dart';
 import 'package:task_system/components/appBar.dart';
+import 'package:task_system/components/dropDownBox.dart';
 import 'package:task_system/components/mainBoxTextField.dart';
 import 'package:task_system/components/navigate_text.dart';
 import 'package:task_system/components/redio_button.dart';
@@ -165,44 +166,39 @@ class _MainTaskState extends State<MainTask> {
                         children: [
                           Row(
                             children: [
-                            MainBoxText(text: 'First Name:',),
-                            MainBoxText(text: 'Last Name:',)
-                          ],),
-                          
+                              MainBoxText(
+                                text: 'First Name:',
+                              ),
+                              MainBoxText(
+                                text: 'Last Name:',
+                              )
+                            ],
+                          ),
                           Row(
                             children: [
                               MainBoxTextField(
                                 width: mainBoxTextFiHalfWidth(context),
                                 hintText: 'First Name',
                               ),
-
                               MainBoxTextField(
                                 width: mainBoxTextFiHalfWidth(context),
                                 hintText: 'Last Name',
                               ),
                             ],
                           ),
-
                           Row(
-                            children: [
-                              MainBoxText(text: 'Company:')
-                            ],
+                            children: [MainBoxText(text: 'Company:')],
                           ),
-
                           Row(
                             children: [
                               MainBoxTextField(
-                                width: mainBoxTextFiFullWidth(context),
+                                  width: mainBoxTextFiFullWidth(context),
                                   hintText: 'Company name'),
                             ],
                           ),
-
                           Row(
-                            children: [
-                              MainBoxText(text: 'Task Title:')
-                            ],
+                            children: [MainBoxText(text: 'Task Title:')],
                           ),
-
                           Row(
                             children: [
                               MainBoxTextField(
@@ -210,13 +206,9 @@ class _MainTaskState extends State<MainTask> {
                                   hintText: 'Task Title'),
                             ],
                           ),
-
                           Row(
-                            children: [
-                              MainBoxText(text: 'Description:')
-                            ],
+                            children: [MainBoxText(text: 'Description:')],
                           ),
-
                           Row(
                             children: [
                               MainBoxTextField(
@@ -224,55 +216,75 @@ class _MainTaskState extends State<MainTask> {
                                   hintText: 'Add Description'),
                             ],
                           ),
-
                           Row(
                             children: [
-                              MainBoxText(text: 'Source From:',),
-                              MainBoxText(text: 'Assign To:',)
-                            ],),
+                              MainBoxText(
+                                text: 'Source From:',
+                              ),
+                              MainBoxText(
+                                text: 'Assign To:',
+                              )
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              DropDownBox(
+                                width: dropDownWidth(context),
+                                  dropdownItems: [
+                                    'Item 1',
+                                    'Item 2',
+                                    'Item 3',
+                                    'Item 4'
+                                  ],
+                                  value: 'Item 1',
+                                  onChanged: (newValue) {
+                                    // Handle changes in selected item here
+                                    print('Selected Item: $newValue');
+                                  }),
 
+                              DropDownBox(
+                                  width: dropDownWidth(context),
+                                  dropdownItems: [
+                                    'Item 1',
+                                    'Item 2',
+                                    'Item 3',
+                                    'Item 4'
+                                  ],
+                                  value: 'Item 1',
+                                  onChanged: (newValue) {
+                                    // Handle changes in selected item here
+                                    print('Selected Item: $newValue');
+                                  }),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              MainBoxText(
+                                text: 'Start Date:',
+                              ),
+                              MainBoxText(
+                                text: 'Due Date:',
+                              )
+                            ],
+                          ),
                           Row(
                             children: [
                               MainBoxTextField(
                                 width: mainBoxTextFiHalfWidth(context),
                                 hintText: '',
                               ),
-
                               MainBoxTextField(
                                 width: mainBoxTextFiHalfWidth(context),
                                 hintText: '',
                               ),
                             ],
                           ),
-
-                          Row(
-                            children: [
-                              MainBoxText(text: 'Start Date:',),
-                              MainBoxText(text: 'Due Date:',)
-                            ],),
-
-                          Row(
-                            children: [
-                              MainBoxTextField(
-                                width: mainBoxTextFiHalfWidth(context),
-                                hintText: '',
-                              ),
-
-                              MainBoxTextField(
-                                width: mainBoxTextFiHalfWidth(context),
-                                hintText: '',
-                              ),
-                            ],
-                          ),
-
                         ],
                       ),
                     ),
                     SizedBox(
                       width: sizeBoxWidthS(context),
                     ),
-
-
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -325,11 +337,9 @@ class _MainTaskState extends State<MainTask> {
                             ],
                           ),
                         ),
-
                         SizedBox(
                           height: smallBoxHeight(context),
                         ),
-
                         Container(
                           height: buttonCHeight(context),
                           width: buttonCWidth(context),
@@ -337,8 +347,14 @@ class _MainTaskState extends State<MainTask> {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
-                              MyButton(onTap: () {  }, childText: 'Save',),
-                              MyButton(onTap: () {  }, childText: 'Cancel',)
+                              MyButton(
+                                onTap: () {},
+                                childText: 'Save',
+                              ),
+                              MyButton(
+                                onTap: () {},
+                                childText: 'Cancel',
+                              )
                             ],
                           ),
                         )
