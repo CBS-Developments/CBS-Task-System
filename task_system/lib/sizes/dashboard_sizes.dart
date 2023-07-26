@@ -110,3 +110,19 @@ double calBoxHeight(BuildContext context) {
 double calBoxWidth(BuildContext context) {
   return (getPageWidth(context) * 0.25) ;
 }
+
+double filterBoxFirstWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.125) ;
+}
+
+double filterBoxFirstSelectWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.088) ;
+}
+
+double filterBoxFirstSelectHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.055) ;
+}
+
+double filterBoxTextFont(BuildContext context) {
+  return (getPageWidth(context) * 0.004) * (getPageHeight(context) * 0.004);
+}
