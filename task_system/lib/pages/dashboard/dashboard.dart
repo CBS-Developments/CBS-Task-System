@@ -65,7 +65,7 @@ class _DashboardState extends State<Dashboard> {
                           Container(
                             margin: EdgeInsets.symmetric(
                                 horizontal: addDPadding(context)),
-                            color: Colors.lightBlue,
+                            color: Colors.white,
                             height: rightDownBoxHeight(context),
                             width: leftBoxWidth(context),
                           )
@@ -84,7 +84,7 @@ class _DashboardState extends State<Dashboard> {
                             width: calBoxWidth(context),
                             height: notiBoxHeight(context),
                             decoration: BoxDecoration(
-                              color: Colors.grey,
+                              color: Colors.white,
                               borderRadius: BorderRadius.circular(8),
                               boxShadow: [
                                 BoxShadow(
