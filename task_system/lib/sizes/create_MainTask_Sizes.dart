@@ -200,3 +200,11 @@ double dropDownINWidth(BuildContext context) {
 double mainBoxTextFiHeight(BuildContext context) {
   return (getPageHeight(context) * 0.055) ;
 }
+
+double chartSectionWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.8) ;
+}
+
+double chartSectionHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.35) ;
+}

@@ -58,6 +58,11 @@ class _CompletedTaskState extends State<CompletedTask> {
                   SizedBox(
                     height: smallBoxHeight(context),
                   ),
+                  Container(
+                    width: chartSectionWidth(context),
+                    height: chartSectionHeight(context),
+                    color: Colors.cyan,
+                  )
                 ],
               ),
             ),
