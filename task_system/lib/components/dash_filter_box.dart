@@ -10,12 +10,22 @@ class FilterBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(
-          horizontal: addDPadding(context)),
-      color: Colors.white,
+      margin: EdgeInsets.symmetric(horizontal: addDPadding(context)),
+      //color: Colors.white,
       width: leftBoxWidth(context),
       height: filterBoxHeight(context),
-      
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(8),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.2),
+            spreadRadius: 2,
+            blurRadius: 2,
+            offset: Offset(0, 2), // changes position of shadow
+          ),
+        ],
+      ),
       child: Row(
         children: [
           Container(
@@ -28,14 +38,13 @@ class FilterBox extends StatelessWidget {
                     Text('Company'),
                   ],
                 ),
-
-                SizedBox(height: smallBoxHeight(context),),
-
+                SizedBox(
+                  height: smallBoxHeight(context),
+                ),
                 Row(
                   children: [
                     FilterUnderBox(
-                        dropdownItems:
-                        [
+                        dropdownItems: const [
                           'Item 1',
                           'Item 2',
                           'Item 3',
@@ -61,14 +70,13 @@ class FilterBox extends StatelessWidget {
                     Text('Source From'),
                   ],
                 ),
-
-                SizedBox(height: smallBoxHeight(context),),
-
+                SizedBox(
+                  height: smallBoxHeight(context),
+                ),
                 Row(
                   children: [
                     FilterUnderBox(
-                        dropdownItems:
-                        const [
+                        dropdownItems: const [
                           'Item 1',
                           'Item 2',
                           'Item 3',
@@ -94,14 +102,13 @@ class FilterBox extends StatelessWidget {
                     Text('Assign To'),
                   ],
                 ),
-
-                SizedBox(height: smallBoxHeight(context),),
-
+                SizedBox(
+                  height: smallBoxHeight(context),
+                ),
                 Row(
                   children: [
                     FilterUnderBox(
-                        dropdownItems:
-                        const [
+                        dropdownItems: const [
                           'Item 1',
                           'Item 2',
                           'Item 3',
@@ -127,14 +134,13 @@ class FilterBox extends StatelessWidget {
                     Text('Status'),
                   ],
                 ),
-
-                SizedBox(height: smallBoxHeight(context),),
-
+                SizedBox(
+                  height: smallBoxHeight(context),
+                ),
                 Row(
                   children: [
                     FilterUnderBox(
-                        dropdownItems:
-                        const [
+                        dropdownItems: const [
                           'Item 1',
                           'Item 2',
                           'Item 3',

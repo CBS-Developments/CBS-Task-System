@@ -65,9 +65,10 @@ class _DashboardState extends State<Dashboard> {
                           Container(
                             margin: EdgeInsets.symmetric(
                                 horizontal: addDPadding(context)),
-                            color: Colors.white,
+                            color: Colors.teal,
                             height: rightDownBoxHeight(context),
                             width: leftBoxWidth(context),
+
                           )
                         ],
                       ),
@@ -129,25 +130,6 @@ class _DashboardState extends State<Dashboard> {
                   ],
                 )
 
-                // Row(
-                //   children: [
-                //     FilterBox()
-                //   ],
-                // ),
-                //
-                // SizedBox(height: smallBoxHeight(context),),
-                //
-                // Row(
-                //   children: [
-                //     Container(
-                //       margin: EdgeInsets.symmetric(
-                //           horizontal: addDPadding(context)),
-                //       color: Colors.lightBlue,
-                //       height: mainBoxHeight(context),
-                //       width: addDWidth(context),
-                //     )
-                //   ],
-                // ),
               ],
             ),
           )
