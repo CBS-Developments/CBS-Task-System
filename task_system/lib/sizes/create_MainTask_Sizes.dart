@@ -208,3 +208,15 @@ double chartSectionWidth(BuildContext context) {
 double chartSectionHeight(BuildContext context) {
   return (getPageHeight(context) * 0.35) ;
 }
+
+double chartTextHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.35) ;
+}
+
+double chartTextWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.2) ;
+}
+
+double taskCountFont(BuildContext context) {
+  return (getPageWidth(context) * 0.005) * (getPageHeight(context) * 0.005);
+}
