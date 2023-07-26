@@ -23,7 +23,7 @@ class FilterBox extends StatelessWidget {
             color: Colors.white,
             child: Column(
               children: [
-                Row(
+                const Row(
                   children: [
                     Text('Company'),
                   ],
@@ -56,18 +56,19 @@ class FilterBox extends StatelessWidget {
             color: Colors.white,
             child: Column(
               children: [
-                Row(
+                const Row(
                   children: [
                     Text('Source From'),
                   ],
                 ),
+
                 SizedBox(height: smallBoxHeight(context),),
 
                 Row(
                   children: [
                     FilterUnderBox(
                         dropdownItems:
-                        [
+                        const [
                           'Item 1',
                           'Item 2',
                           'Item 3',
@@ -88,7 +89,7 @@ class FilterBox extends StatelessWidget {
             color: Colors.white,
             child: Column(
               children: [
-                Row(
+                const Row(
                   children: [
                     Text('Assign To'),
                   ],
@@ -100,7 +101,7 @@ class FilterBox extends StatelessWidget {
                   children: [
                     FilterUnderBox(
                         dropdownItems:
-                        [
+                        const [
                           'Item 1',
                           'Item 2',
                           'Item 3',
@@ -121,7 +122,7 @@ class FilterBox extends StatelessWidget {
             color: Colors.white,
             child: Column(
               children: [
-                Row(
+                const Row(
                   children: [
                     Text('Status'),
                   ],
@@ -133,7 +134,7 @@ class FilterBox extends StatelessWidget {
                   children: [
                     FilterUnderBox(
                         dropdownItems:
-                        [
+                        const [
                           'Item 1',
                           'Item 2',
                           'Item 3',
