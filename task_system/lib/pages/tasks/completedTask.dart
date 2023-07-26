@@ -62,6 +62,7 @@ class _CompletedTaskState extends State<CompletedTask> {
               ),
             ),
           ],
-        ));
+        ),
+    );
   }
 }
