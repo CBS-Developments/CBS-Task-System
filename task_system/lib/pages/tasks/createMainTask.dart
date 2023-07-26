@@ -14,6 +14,7 @@ import 'package:task_system/tabs/task_tab.dart';
 import '../../components/mainbox_Text.dart';
 import '../../components/my_button.dart';
 import '../../sizes/dashboard_sizes.dart';
+import 'createSubTask.dart';
 
 class MainTask extends StatefulWidget {
 
@@ -111,7 +112,12 @@ class _MainTaskState extends State<MainTask> {
                               foregroundColor:
                                   Colors.blue, // Set the text color here
                             ),
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => SubTask()),
+                              );
+                            },
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
