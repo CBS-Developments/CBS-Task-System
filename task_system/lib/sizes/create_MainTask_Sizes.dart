@@ -244,3 +244,7 @@ double chartRadius(BuildContext context) {
 double chartLineWidth(BuildContext context) {
   return (getPageWidth(context) * 0.008) ;
 }
+
+double interChartWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.05) ;
+}

@@ -120,9 +120,29 @@ class _CompletedTaskState extends State<CompletedTask> {
                       ),
 
                       ChartBox(
-                        centerText: '70.0%',
-                        percent: 0.7,
-                        footerText: 'Task this Week',),
+                        centerText: '60.0%',
+                        percent: 0.6,
+                        footerText: 'Completed this Week',),
+
+                      SizedBox(
+                        width: interChartWidth(context),
+                      ),
+
+                      ChartBox(
+                        centerText: '25.0%',
+                        percent: 0.25,
+                        footerText: 'In-Progress this Week',),
+
+                      SizedBox(
+                        width: interChartWidth(context),
+                      ),
+
+                      ChartBox(
+                        centerText: '15.0%',
+                        percent: 0.15,
+                        footerText: 'To-Do this Week',),
+
+
                     ],
                   ),
                 )
