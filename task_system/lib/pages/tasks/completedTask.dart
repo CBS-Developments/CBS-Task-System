@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_system/components/chartBox.dart';
 
 import '../../colors/appColors.dart';
 import '../../components/appBar.dart';
@@ -66,11 +67,11 @@ class _CompletedTaskState extends State<CompletedTask> {
                 Container(
                   width: chartSectionWidth(context),
                   height: chartSectionHeight(context),
-                  color: Colors.cyan,
+                  // color: Colors.cyan,
                   child: Row(
                     children: [
                       Container(
-                        color: Colors.white,
+                        // color: Colors.white,
                         width: chartTextWidth(context),
                         height: chartTextHeight(context),
                         padding: EdgeInsets.all(navBoxPadding(context)),
@@ -116,7 +117,12 @@ class _CompletedTaskState extends State<CompletedTask> {
                             width: chartIMGWidth(context),)
                           ],
                         ),
-                      )
+                      ),
+
+                      ChartBox(
+                        centerText: '70.0%',
+                        percent: 0.7,
+                        footerText: 'Task this Week',),
                     ],
                   ),
                 )

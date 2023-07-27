@@ -228,3 +228,19 @@ double chartIMGWidth(BuildContext context) {
 double taskCountFont(BuildContext context) {
   return (getPageWidth(context) * 0.005) * (getPageHeight(context) * 0.005);
 }
+
+double chartBoxHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.3) ;
+}
+
+double chartBoxWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.16) ;
+}
+
+double chartRadius(BuildContext context) {
+  return (getPageHeight(context) * 0.1) ;
+}
+
+double chartLineWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.008) ;
+}
