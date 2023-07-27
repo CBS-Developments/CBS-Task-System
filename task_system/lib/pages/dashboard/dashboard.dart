@@ -81,19 +81,24 @@ class _DashboardState extends State<Dashboard> {
                                 ),
                               ],
                             ),
-                            child: Row(
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                            child: Column(
                               children: [
-                              TaskDetails()
+                                TaskDetails(),
+
+                                Divider(thickness: 1,)
                               ],
                             ),
 
 
 
 
-                          )
+
+
+                          ),
+
                         ],
                       ),
+
                     ),
                     Container(
                       margin: EdgeInsets.symmetric(

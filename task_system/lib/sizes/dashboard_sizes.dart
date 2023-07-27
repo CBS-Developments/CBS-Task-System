@@ -132,9 +132,13 @@ double rightDownBoxSeparateHeight(BuildContext context) {
 }
 
 double rightDownBoxSeparateWidth(BuildContext context) {
-  return (getPageWidth(context) * 0.51) ;
+  return (getPageWidth(context) * 0.4999) ;
 }
 
 double taskSum01(BuildContext context) {
   return (getPageHeight(context) * 0.0561) ;
+}
+
+double betweenGap(BuildContext context) {
+  return (getPageWidth(context) * 0.1810) ;
 }
