@@ -32,6 +32,10 @@ double smallBoxHeight(BuildContext context) {
   return (getPageHeight(context) * 0.018) ;
 }
 
+double largeBoxHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.045) ;
+}
+
 double drawerButtonWidth(BuildContext context) {
   return (getPageWidth(context) * 0.14) ;
 }
@@ -215,6 +219,10 @@ double chartTextHeight(BuildContext context) {
 
 double chartTextWidth(BuildContext context) {
   return (getPageWidth(context) * 0.2) ;
+}
+
+double chartIMGWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.1) ;
 }
 
 double taskCountFont(BuildContext context) {
