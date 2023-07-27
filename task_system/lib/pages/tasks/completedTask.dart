@@ -11,7 +11,8 @@ import '../../tabs/task_tab.dart';
 
 class CompletedTask extends StatefulWidget {
   final taskCount;
-  const CompletedTask({Key? key, this.taskCount}) : super(key: key);
+  final month;
+  const CompletedTask({Key? key, this.taskCount, this.month}) : super(key: key);
 
   @override
   State<CompletedTask> createState() => _CompletedTaskState();
@@ -19,6 +20,7 @@ class CompletedTask extends StatefulWidget {
 
 class _CompletedTaskState extends State<CompletedTask> {
   String get taskCount => '20';
+  String get month => 'August 10-20th';
 
   @override
   Widget build(BuildContext context) {
@@ -73,6 +75,8 @@ class _CompletedTaskState extends State<CompletedTask> {
                         height: chartTextHeight(context),
                         padding: EdgeInsets.all(navBoxPadding(context)),
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
                               'COMPLETE GOAL',
@@ -81,6 +85,8 @@ class _CompletedTaskState extends State<CompletedTask> {
                                   fontWeight: FontWeight.bold),
                             ),
                             Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Text(
                                   taskCount,
@@ -88,16 +94,26 @@ class _CompletedTaskState extends State<CompletedTask> {
                                       fontSize: taskCountFont(context),
                                       fontWeight: FontWeight.bold),
                                 ),
-
                                 Text(
-                                  'Total Tasks',
+                                  ' Total Tasks',
                                   style: TextStyle(
-                                      fontSize: serTextFont(context),),
+                                    fontSize: serTextFont(context),
+                                  ),
                                 ),
-
-
                               ],
-                            )
+                            ),
+                            Text(
+                              month,
+                              style: TextStyle(
+                                fontSize: serTextFont(context),
+                              ),
+                            ),
+                            SizedBox(
+                              height: largeBoxHeight(context),
+                            ),
+                            
+                            Image.asset('images/CT.png',
+                            width: chartIMGWidth(context),)
                           ],
                         ),
                       )
