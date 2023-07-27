@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:task_system/sizes/create_MainTask_Sizes.dart';
 
 class TableBox extends StatelessWidget {
-  const TableBox({Key? key}) : super(key: key);
+  final List <DataRow> generateRows;
+  const TableBox({Key? key, required this.generateRows}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,128 +15,26 @@ class TableBox extends StatelessWidget {
         child: DataTable(
             columns: [
               DataColumn(
-                label: Text('Task'),
+                label: Text('Task',style: TextStyle( fontWeight:FontWeight.bold, fontSize: tableTextFont(context)),),
               ),
               DataColumn(
-                label: Text('Start Date'),
+                label: Text('Start Date',style: TextStyle( fontWeight:FontWeight.bold, fontSize: tableTextFont(context))),
               ),
               DataColumn(
-                label: Text('End Date'),
+                label: Text('End Date',style: TextStyle( fontWeight:FontWeight.bold, fontSize: tableTextFont(context))),
               ),
               DataColumn(
-                label: Text('Description'),
+                label: Text('Description',style: TextStyle( fontWeight:FontWeight.bold, fontSize: tableTextFont(context))),
               ),
               DataColumn(
-                label: Text('Status'),
+                label: Text('Status',style: TextStyle( fontWeight:FontWeight.bold, fontSize: tableTextFont(context))),
               ),
               DataColumn(
                 label: Text(''),
               ),
             ],
-            rows: [
-
-              DataRow(cells: [
-                DataCell(Text('Dinethri Regular Task - April 2023')),
-                DataCell(Text('Dec 4, 2019 21:42')),
-                DataCell(Text('Dec 7, 2019 23:26')),
-                DataCell(Text('Task System Figma UI')),
-                DataCell(Text('Completed')),
-                DataCell(Row(
-                  children: [
-                    TextButton(onPressed: () {  },
-                    child: Text('Edit',style: TextStyle(color: Colors.black),)),
-
-                    TextButton(onPressed: () {  },
-                        child: Text('Remove',style: TextStyle(color: Colors.redAccent),)),
-                  ],
-                )),
-              ]),
-
-              DataRow(cells: [
-                DataCell(Text('Dinethri Regular Task - April 2023')),
-                DataCell(Text('Dec 4, 2019 21:42')),
-                DataCell(Text('Dec 7, 2019 23:26')),
-                DataCell(Text('Task System Figma UI')),
-                DataCell(Text('Completed')),
-                DataCell(Row(
-                  children: [
-                    TextButton(onPressed: () {  },
-                        child: Text('Edit',style: TextStyle(color: Colors.black),)),
-
-                    TextButton(onPressed: () {  },
-                        child: Text('Remove',style: TextStyle(color: Colors.redAccent),)),
-                  ],
-                )),
-              ]),
-
-              DataRow(cells: [
-                DataCell(Text('Dinethri Regular Task - April 2023')),
-                DataCell(Text('Dec 4, 2019 21:42')),
-                DataCell(Text('Dec 7, 2019 23:26')),
-                DataCell(Text('Task System Figma UI')),
-                DataCell(Text('Completed')),
-                DataCell(Row(
-                  children: [
-                    TextButton(onPressed: () {  },
-                        child: Text('Edit',style: TextStyle(color: Colors.black),)),
-
-                    TextButton(onPressed: () {  },
-                        child: Text('Remove',style: TextStyle(color: Colors.redAccent),)),
-                  ],
-                )),
-              ]),
-
-              DataRow(cells: [
-                DataCell(Text('Dinethri Regular Task - April 2023')),
-                DataCell(Text('Dec 4, 2019 21:42')),
-                DataCell(Text('Dec 7, 2019 23:26')),
-                DataCell(Text('Task System Figma UI')),
-                DataCell(Text('Completed')),
-                DataCell(Row(
-                  children: [
-                    TextButton(onPressed: () {  },
-                        child: Text('Edit',style: TextStyle(color: Colors.black),)),
-
-                    TextButton(onPressed: () {  },
-                        child: Text('Remove',style: TextStyle(color: Colors.redAccent),)),
-                  ],
-                )),
-              ]),
-
-              DataRow(cells: [
-                DataCell(Text('Dinethri Regular Task - April 2023')),
-                DataCell(Text('Dec 4, 2019 21:42')),
-                DataCell(Text('Dec 7, 2019 23:26')),
-                DataCell(Text('Task System Figma UI')),
-                DataCell(Text('Completed')),
-                DataCell(Row(
-                  children: [
-                    TextButton(onPressed: () {  },
-                        child: Text('Edit',style: TextStyle(color: Colors.black),)),
-
-                    TextButton(onPressed: () {  },
-                        child: Text('Remove',style: TextStyle(color: Colors.redAccent),)),
-                  ],
-                )),
-              ]),
-
-              DataRow(cells: [
-                DataCell(Text('Dinethri Regular Task - April 2023')),
-                DataCell(Text('Dec 4, 2019 21:42')),
-                DataCell(Text('Dec 7, 2019 23:26')),
-                DataCell(Text('Task System Figma UI')),
-                DataCell(Text('Completed')),
-                DataCell(Row(
-                  children: [
-                    TextButton(onPressed: () {  },
-                        child: Text('Edit',style: TextStyle(color: Colors.black),)),
-
-                    TextButton(onPressed: () {  },
-                        child: Text('Remove',style: TextStyle(color: Colors.redAccent),)),
-                  ],
-                )),
-              ])
-            ]),
+            rows: generateRows
+            ),
       ),
     );
   }

@@ -113,37 +113,34 @@ class _CompletedTaskState extends State<CompletedTask> {
                             SizedBox(
                               height: largeBoxHeight(context),
                             ),
-                            
-                            Image.asset('images/CT.png',
-                            width: chartIMGWidth(context),)
+                            Image.asset(
+                              'images/CT.png',
+                              width: chartIMGWidth(context),
+                            )
                           ],
                         ),
                       ),
-
                       ChartBox(
                         centerText: '60.0%',
                         percent: 0.6,
-                        footerText: 'Completed this Week',),
-
+                        footerText: 'Completed this Week',
+                      ),
                       SizedBox(
                         width: interChartWidth(context),
                       ),
-
                       ChartBox(
                         centerText: '25.0%',
                         percent: 0.25,
-                        footerText: 'In-Progress this Week',),
-
+                        footerText: 'In-Progress this Week',
+                      ),
                       SizedBox(
                         width: interChartWidth(context),
                       ),
-
                       ChartBox(
                         centerText: '15.0%',
                         percent: 0.15,
-                        footerText: 'To-Do this Week',),
-
-
+                        footerText: 'To-Do this Week',
+                      ),
                     ],
                   ),
                 ),
@@ -153,9 +150,270 @@ class _CompletedTaskState extends State<CompletedTask> {
                 SizedBox(
                   height: smallBoxHeight(context),
                 ),
+                
+                TableBox(
+                  generateRows: [
+                    DataRow(cells: [
+                      DataCell(Text(
+                        'Dinethri Regular Task - April 2023',
+                        style: TextStyle(fontSize: tableTextFont(context)),
+                      )),
+                      DataCell(Text(
+                        'Dec 4, 2019 21:42',
+                        style: TextStyle(fontSize: tableTextFont(context)),
+                      )),
+                      DataCell(Text(
+                        'Dec 7, 2019 23:26',
+                        style: TextStyle(fontSize: tableTextFont(context)),
+                      )),
+                      DataCell(Text(
+                        'Task System Figma UI',
+                        style: TextStyle(fontSize: tableTextFont(context)),
+                      )),
+                      DataCell(Text(
+                        'Completed',
+                        style: TextStyle(fontSize: tableTextFont(context)),
+                      )),
+                      DataCell(Row(
+                        children: [
+                          TextButton(
+                              onPressed: () {},
+                              child: Text(
+                                'Edit',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: tableTextFont(context)),
+                              )),
+                          TextButton(
+                              onPressed: () {},
+                              child: Text(
+                                'Remove',
+                                style: TextStyle(
+                                    color: Colors.redAccent,
+                                    fontSize: tableTextFont(context)),
+                              )),
+                        ],
+                      )),
+                    ]),
 
-                TableBox()
+                    DataRow(cells: [
+                      DataCell(Text(
+                        'Dinethri Regular Task - April 2023',
+                        style: TextStyle(fontSize: tableTextFont(context)),
+                      )),
+                      DataCell(Text(
+                        'Dec 4, 2019 21:42',
+                        style: TextStyle(fontSize: tableTextFont(context)),
+                      )),
+                      DataCell(Text(
+                        'Dec 7, 2019 23:26',
+                        style: TextStyle(fontSize: tableTextFont(context)),
+                      )),
+                      DataCell(Text(
+                        'Task System Figma UI',
+                        style: TextStyle(fontSize: tableTextFont(context)),
+                      )),
+                      DataCell(Text(
+                        'Completed',
+                        style: TextStyle(fontSize: tableTextFont(context)),
+                      )),
+                      DataCell(Row(
+                        children: [
+                          TextButton(
+                              onPressed: () {},
+                              child: Text(
+                                'Edit',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: tableTextFont(context)),
+                              )),
+                          TextButton(
+                              onPressed: () {},
+                              child: Text(
+                                'Remove',
+                                style: TextStyle(
+                                    color: Colors.redAccent,
+                                    fontSize: tableTextFont(context)),
+                              )),
+                        ],
+                      )),
+                    ]),
 
+                    DataRow(cells: [
+                      DataCell(Text(
+                        'Dinethri Regular Task - April 2023',
+                        style: TextStyle(fontSize: tableTextFont(context)),
+                      )),
+                      DataCell(Text(
+                        'Dec 4, 2019 21:42',
+                        style: TextStyle(fontSize: tableTextFont(context)),
+                      )),
+                      DataCell(Text(
+                        'Dec 7, 2019 23:26',
+                        style: TextStyle(fontSize: tableTextFont(context)),
+                      )),
+                      DataCell(Text(
+                        'Task System Figma UI',
+                        style: TextStyle(fontSize: tableTextFont(context)),
+                      )),
+                      DataCell(Text(
+                        'Completed',
+                        style: TextStyle(fontSize: tableTextFont(context)),
+                      )),
+                      DataCell(Row(
+                        children: [
+                          TextButton(
+                              onPressed: () {},
+                              child: Text(
+                                'Edit',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: tableTextFont(context)),
+                              )),
+                          TextButton(
+                              onPressed: () {},
+                              child: Text(
+                                'Remove',
+                                style: TextStyle(
+                                    color: Colors.redAccent,
+                                    fontSize: tableTextFont(context)),
+                              )),
+                        ],
+                      )),
+                    ]),
+
+                    DataRow(cells: [
+                      DataCell(Text(
+                        'Dinethri Regular Task - April 2023',
+                        style: TextStyle(fontSize: tableTextFont(context)),
+                      )),
+                      DataCell(Text(
+                        'Dec 4, 2019 21:42',
+                        style: TextStyle(fontSize: tableTextFont(context)),
+                      )),
+                      DataCell(Text(
+                        'Dec 7, 2019 23:26',
+                        style: TextStyle(fontSize: tableTextFont(context)),
+                      )),
+                      DataCell(Text(
+                        'Task System Figma UI',
+                        style: TextStyle(fontSize: tableTextFont(context)),
+                      )),
+                      DataCell(Text(
+                        'Completed',
+                        style: TextStyle(fontSize: tableTextFont(context)),
+                      )),
+                      DataCell(Row(
+                        children: [
+                          TextButton(
+                              onPressed: () {},
+                              child: Text(
+                                'Edit',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: tableTextFont(context)),
+                              )),
+                          TextButton(
+                              onPressed: () {},
+                              child: Text(
+                                'Remove',
+                                style: TextStyle(
+                                    color: Colors.redAccent,
+                                    fontSize: tableTextFont(context)),
+                              )),
+                        ],
+                      )),
+                    ]),
+
+                    DataRow(cells: [
+                      DataCell(Text(
+                        'Dinethri Regular Task - April 2023',
+                        style: TextStyle(fontSize: tableTextFont(context)),
+                      )),
+                      DataCell(Text(
+                        'Dec 4, 2019 21:42',
+                        style: TextStyle(fontSize: tableTextFont(context)),
+                      )),
+                      DataCell(Text(
+                        'Dec 7, 2019 23:26',
+                        style: TextStyle(fontSize: tableTextFont(context)),
+                      )),
+                      DataCell(Text(
+                        'Task System Figma UI',
+                        style: TextStyle(fontSize: tableTextFont(context)),
+                      )),
+                      DataCell(Text(
+                        'Completed',
+                        style: TextStyle(fontSize: tableTextFont(context)),
+                      )),
+                      DataCell(Row(
+                        children: [
+                          TextButton(
+                              onPressed: () {},
+                              child: Text(
+                                'Edit',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: tableTextFont(context)),
+                              )),
+                          TextButton(
+                              onPressed: () {},
+                              child: Text(
+                                'Remove',
+                                style: TextStyle(
+                                    color: Colors.redAccent,
+                                    fontSize: tableTextFont(context)),
+                              )),
+                        ],
+                      )),
+                    ]),
+
+                    DataRow(cells: [
+                      DataCell(Text(
+                        'Dinethri Regular Task - April 2023',
+                        style: TextStyle(fontSize: tableTextFont(context)),
+                      )),
+                      DataCell(Text(
+                        'Dec 4, 2019 21:42',
+                        style: TextStyle(fontSize: tableTextFont(context)),
+                      )),
+                      DataCell(Text(
+                        'Dec 7, 2019 23:26',
+                        style: TextStyle(fontSize: tableTextFont(context)),
+                      )),
+                      DataCell(Text(
+                        'Task System Figma UI',
+                        style: TextStyle(fontSize: tableTextFont(context)),
+                      )),
+                      DataCell(Text(
+                        'Completed',
+                        style: TextStyle(fontSize: tableTextFont(context)),
+                      )),
+                      DataCell(Row(
+                        children: [
+                          TextButton(
+                              onPressed: () {},
+                              child: Text(
+                                'Edit',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: tableTextFont(context)),
+                              )),
+                          TextButton(
+                              onPressed: () {},
+                              child: Text(
+                                'Remove',
+                                style: TextStyle(
+                                    color: Colors.redAccent,
+                                    fontSize: tableTextFont(context)),
+                              )),
+                        ],
+                      )),
+                    ]),
+                  ],
+                )
+                
+                
               ],
             ),
           ),

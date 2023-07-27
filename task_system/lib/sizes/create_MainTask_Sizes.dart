@@ -256,3 +256,7 @@ double tableBoxHeight(BuildContext context) {
 double tableBoxWidth(BuildContext context) {
   return (getPageWidth(context) * 0.8) ;
 }
+
+double tableTextFont(BuildContext context) {
+  return (getPageWidth(context) * 0.0039) * (getPageHeight(context) * 0.0039);
+}
