@@ -6,10 +6,27 @@ import '../sizes/dashboard_sizes.dart';
 
 class TaskDetails extends StatelessWidget {
 
+final String taskID;
+final String priority;
+final String status;
+final String taskName;
+final String date;
+final String dueDate;
+final String nameCompanyAssign;
+final String today;
 
 
+   TaskDetails({Key? key,
+     required this.taskID,
+     required this.priority,
+     required this.status,
+     required this.taskName,
+     required this.date,
+     required this.dueDate,
+     required this.nameCompanyAssign,
+     required this.today
 
-  const TaskDetails({Key? key}) : super(key: key);
+   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +46,7 @@ class TaskDetails extends StatelessWidget {
                 child: Row(
                   children: [
                     SizedBox(width: smallBoxHeight(context)),
-                    Text('01. dine_0606#1680502025756'),
+                    Text(taskID,),
                     SizedBox(width: betweenGap(context)),
                     Container(
                       padding: EdgeInsets.all(5.0), // Add padding to the text
@@ -41,7 +58,7 @@ class TaskDetails extends StatelessWidget {
                         ),
                       ),
                       child: Text(
-                        'Medium',
+                        priority,
                         style: TextStyle(
                             color: AppColor.tabBlueSelect,
                             fontWeight: FontWeight.bold,
@@ -50,7 +67,7 @@ class TaskDetails extends StatelessWidget {
                     ),
                     Expanded(child: SizedBox()), // This will push 'Pending' to the right end
                     Text(
-                      'Pending',
+                      status,
                       style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
                     ),
                   ],
@@ -69,14 +86,14 @@ class TaskDetails extends StatelessWidget {
                   children: [
                     SizedBox(width: smallBoxHeight(context)),
                     Text(
-                      'Task System Figma UI',
+                      taskName,
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                     SizedBox(width: betweenGap(context)),
 
                     Expanded(child: SizedBox()), // This will push 'Pending' to the right end
                     Text(
-                      '0 day(s) 5 hour(s) 0 min(s) 30 sec(s)',
+                      date,
                       style: TextStyle(fontSize: 10),
                     ),
                   ],
@@ -95,7 +112,7 @@ class TaskDetails extends StatelessWidget {
                   children: [
                     SizedBox(width: smallBoxHeight(context)),
                     Text(
-                      'Due Date: Apr 30, 2023',
+                      dueDate,
                       style: TextStyle(fontSize: 10),
                     ),
                     SizedBox(width: betweenGap(context)),
@@ -148,7 +165,7 @@ class TaskDetails extends StatelessWidget {
                   children: [
                     SizedBox(width: smallBoxHeight(context)),
                     Text(
-                      'Dinethri Gunawardhana -> CBS Pvt.Ltd -> Assign To: [-All-]',
+                      nameCompanyAssign,
                       style: TextStyle(
                           fontSize: 10),
                     ),
@@ -156,7 +173,7 @@ class TaskDetails extends StatelessWidget {
 
                     Expanded(child: SizedBox()), // This will push 'Pending' to the right end
                     Text(
-                      '04/04/2023',
+                      today,
                       style: TextStyle(fontSize: 10),
                     ),
                   ],
