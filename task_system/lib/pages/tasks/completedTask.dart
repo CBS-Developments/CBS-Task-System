@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task_system/components/chartBox.dart';
+import 'package:task_system/components/tableBox.dart';
 
 import '../../colors/appColors.dart';
 import '../../components/appBar.dart';
@@ -145,7 +146,13 @@ class _CompletedTaskState extends State<CompletedTask> {
 
                     ],
                   ),
-                )
+                ),
+                SizedBox(
+                  height: smallBoxHeight(context),
+                ),
+
+                TableBox()
+
               ],
             ),
           ),

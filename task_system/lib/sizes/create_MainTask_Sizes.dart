@@ -248,3 +248,11 @@ double chartLineWidth(BuildContext context) {
 double interChartWidth(BuildContext context) {
   return (getPageWidth(context) * 0.05) ;
 }
+
+double tableBoxHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.4) ;
+}
+
+double tableBoxWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.8) ;
+}
