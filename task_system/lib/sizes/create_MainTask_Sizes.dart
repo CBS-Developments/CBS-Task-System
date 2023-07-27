@@ -53,7 +53,7 @@ double drawerMiniWidth(BuildContext context) {
 }
 
 double drawerFontLarge(BuildContext context) {
-  return (getPageWidth(context) * 0.0042) * (getPageHeight(context) * 0.0042);
+  return (getPageWidth(context) * 0.0043) * (getPageHeight(context) * 0.0043);
 }
 
 double drawerIconMargin(BuildContext context) {
