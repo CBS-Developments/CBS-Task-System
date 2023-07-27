@@ -3,6 +3,7 @@ import 'package:task_system/colors/appColors.dart';
 import 'package:task_system/pages/tasks/completedTask.dart';
 import 'package:task_system/pages/tasks/createMainTask.dart';
 import 'package:task_system/pages/tasks/createSubTask.dart';
+import 'package:task_system/pages/tasks/todoTask.dart';
 
 import '../sizes/create_MainTask_Sizes.dart';
 import '../sizes/dashboard_sizes.dart';
@@ -89,7 +90,10 @@ class TaskTabBar extends StatelessWidget {
             style: TextButton.styleFrom(
               foregroundColor: fivethButtonColor, // Set the text color here
             ),
-            onPressed: () {},
+            onPressed: () {Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ToDoTask()),
+            );},
             child: Text(
               'To-Do  Task',
               style: TextStyle(fontSize: navTextFont(context)),
