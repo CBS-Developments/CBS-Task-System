@@ -81,26 +81,53 @@ class _DashboardState extends State<Dashboard> {
                                 ),
                               ],
                             ),
-                            child: Column(
-                              children: [
-                               TaskDetails(
-                                   taskID: 'dine_0606#1680502025756',
-                                   priority: 'Medium',
-                                   status: 'Pending',
-                                   taskName: 'Task System Figma UI',
-                                   date: '0 day(s) 5 hour(s) 0 min(s) 30 sec(s)',
-                                   dueDate: 'Due Date: Apr 30, 2023',
-                                   nameCompanyAssign: 'Dinethri Gunawardhana -> CBS Pvt.Ltd -> Assign To: [-All-]',
-                                   today: '04/04/2023'),
+                            child: SingleChildScrollView(
+                              child: Column(
+                                children: [
+                                 TaskDetails(
+                                     taskID: 'dine_0606#1680502025756',
+                                     priority: 'Medium',
+                                     status: 'Pending',
+                                     taskName: 'Task System Figma UI',
+                                     date: '0 day(s) 5 hour(s) 0 min(s) 30 sec(s)',
+                                     dueDate: 'Due Date: Apr 30, 2023',
+                                     nameCompanyAssign: 'Dinethri Gunawardhana -> CBS Pvt.Ltd -> Assign To: [-All-]',
+                                     today: '04/04/2023'),
 
-                                Divider(thickness: 1,)
-                              ],
+                                  Divider(thickness: 1,),
+
+                                  Column(
+                                    children: [
+                                      TaskDetails(
+                                          taskID: 'dine_0606#1680502025756',
+                                          priority: 'Medium',
+                                          status: 'Pending',
+                                          taskName: 'Task System Figma UI',
+                                          date: '0 day(s) 5 hour(s) 0 min(s) 30 sec(s)',
+                                          dueDate: 'Due Date: Apr 30, 2023',
+                                          nameCompanyAssign: 'Dinethri Gunawardhana -> CBS Pvt.Ltd -> Assign To: [-All-]',
+                                          today: '04/04/2023'),
+                                    ],
+
+                                  ),
+                                  Divider(thickness: 1,),
+
+                                  Column(
+                                    children: [
+                                      TaskDetails(
+                                          taskID: 'dine_0606#1680502025756',
+                                          priority: 'Medium',
+                                          status: 'Pending',
+                                          taskName: 'Task System Figma UI',
+                                          date: '0 day(s) 5 hour(s) 0 min(s) 30 sec(s)',
+                                          dueDate: 'Due Date: Apr 30, 2023',
+                                          nameCompanyAssign: 'Dinethri Gunawardhana -> CBS Pvt.Ltd -> Assign To: [-All-]',
+                                          today: '04/04/2023'),
+                                    ],
+                                  )
+                                ],
+                              ),
                             ),
-
-
-
-
-
 
                           ),
 

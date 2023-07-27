@@ -30,6 +30,8 @@ final String today;
 
   @override
   Widget build(BuildContext context) {
+    String today = DateTime.now().toString().split(' ')[0];
+
     return Container(
       width: rightDownBoxSeparateWidth(context),
       height: rightDownBoxSeparateHeight(context),
@@ -49,7 +51,7 @@ final String today;
                     Text(taskID,),
                     SizedBox(width: betweenGap(context)),
                     Container(
-                      padding: EdgeInsets.all(5.0), // Add padding to the text
+                      padding: const EdgeInsets.all(5.0), // Add padding to the text
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8),
                         border: Border.all(
@@ -65,10 +67,10 @@ final String today;
                             fontSize: 12),
                       ),
                     ),
-                    Expanded(child: SizedBox()), // This will push 'Pending' to the right end
+                    const Expanded(child: SizedBox()), // This will push 'Pending' to the right end
                     Text(
                       status,
-                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                      style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
                     ),
                   ],
                 ),
@@ -87,14 +89,14 @@ final String today;
                     SizedBox(width: smallBoxHeight(context)),
                     Text(
                       taskName,
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                      style: const TextStyle(fontWeight: FontWeight.bold),
                     ),
                     SizedBox(width: betweenGap(context)),
 
-                    Expanded(child: SizedBox()), // This will push 'Pending' to the right end
+                    const Expanded(child: SizedBox()), // This will push 'Pending' to the right end
                     Text(
                       date,
-                      style: TextStyle(fontSize: 10),
+                      style: const TextStyle(fontSize: 10),
                     ),
                   ],
                 ),
@@ -134,7 +136,7 @@ final String today;
                         ),
                       ),
                     ),
-                    Expanded(child: SizedBox()), // This will push 'Pending' to the right end
+                    const Expanded(child: SizedBox()), // This will push 'Pending' to the right end
                     GestureDetector(
                       onTap: () {
                         print("Edit Main Task tapped");
@@ -166,15 +168,14 @@ final String today;
                     SizedBox(width: smallBoxHeight(context)),
                     Text(
                       nameCompanyAssign,
-                      style: TextStyle(
-                          fontSize: 10),
+                      style: const TextStyle(fontSize: 10),
                     ),
                     SizedBox(width: betweenGap(context)),
 
-                    Expanded(child: SizedBox()), // This will push 'Pending' to the right end
+                    const Expanded(child: SizedBox()), // This will push 'Pending' to the right end
                     Text(
                       today,
-                      style: TextStyle(fontSize: 10),
+                      style: const TextStyle(fontSize: 10),
                     ),
                   ],
                 ),
