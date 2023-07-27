@@ -126,3 +126,15 @@ double filterBoxFirstSelectHeight(BuildContext context) {
 double filterBoxTextFont(BuildContext context) {
   return (getPageWidth(context) * 0.004) * (getPageHeight(context) * 0.004);
 }
+
+double rightDownBoxSeparateHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.2244) ;
+}
+
+double rightDownBoxSeparateWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.51) ;
+}
+
+double taskSum01(BuildContext context) {
+  return (getPageHeight(context) * 0.0561) ;
+}

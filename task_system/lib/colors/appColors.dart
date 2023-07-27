@@ -13,6 +13,8 @@ class AppColor{
   static  Color low = const Color(0xFF001181);
   static  Color regular = const Color(0xFF118100);
   static  Color medium = const Color(0xFFDCBF00);
+  static  Color complete = const Color(0xFF0400D1);
+  static  Color pending = const Color(0xFF809FB8);
 
 
 

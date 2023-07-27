@@ -29,11 +29,13 @@ class FilterBox extends StatelessWidget {
       child: Row(
         children: [
           Container(
+            padding: EdgeInsets.only(left: 20.0, top: 8.0),
+            //padding: EdgeInsets.symmetric(horizontal: dropDownPadding(context)),
             width: filterBoxFirstWidth(context),
             color: Colors.white,
             child: Column(
               children: [
-                const Row(
+                 Row(
                   children: [
                     Text('Company'),
                   ],
@@ -61,6 +63,7 @@ class FilterBox extends StatelessWidget {
             ),
           ),
           Container(
+            padding: EdgeInsets.only(left: 20.0, top: 8.0),
             width: filterBoxFirstWidth(context),
             color: Colors.white,
             child: Column(
@@ -93,6 +96,7 @@ class FilterBox extends StatelessWidget {
             ),
           ),
           Container(
+            padding: EdgeInsets.only(left: 20.0, top: 8.0),
             width: filterBoxFirstWidth(context),
             color: Colors.white,
             child: Column(
@@ -125,6 +129,7 @@ class FilterBox extends StatelessWidget {
             ),
           ),
           Container(
+            padding: EdgeInsets.only(left: 20.0, top: 8.0),
             width: filterBoxFirstWidth(context),
             color: Colors.white,
             child: Column(

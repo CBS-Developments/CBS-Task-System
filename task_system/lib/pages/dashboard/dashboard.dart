@@ -4,6 +4,7 @@ import 'package:task_system/components/appBar.dart';
 import 'package:task_system/components/dash_filter_box.dart';
 import 'package:task_system/components/navigate_text.dart';
 import 'package:task_system/components/search_box.dart';
+import 'package:task_system/components/task_sum.dart';
 import 'package:task_system/drawers/dashboard_drawer.dart';
 
 import '../../sizes/create_MainTask_Sizes.dart';
@@ -65,9 +66,30 @@ class _DashboardState extends State<Dashboard> {
                           Container(
                             margin: EdgeInsets.symmetric(
                                 horizontal: addDPadding(context)),
-                            color: Colors.teal,
+                            //color: Colors.teal,
                             height: rightDownBoxHeight(context),
                             width: leftBoxWidth(context),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(8),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.2),
+                                  spreadRadius: 2,
+                                  blurRadius: 2,
+                                  offset: Offset(0, 2), // changes position of shadow
+                                ),
+                              ],
+                            ),
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                              TaskDetails()
+                              ],
+                            ),
+
+
+
 
                           )
                         ],
