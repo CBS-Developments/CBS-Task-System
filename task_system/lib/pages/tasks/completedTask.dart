@@ -150,6 +150,9 @@ class _CompletedTaskState extends State<CompletedTask> {
                 SizedBox(
                   height: smallBoxHeight(context),
                 ),
+                SizedBox(
+                  height: smallBoxHeight(context),
+                ),
 
                 TableBox()
 
