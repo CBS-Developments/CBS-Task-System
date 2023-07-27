@@ -8,13 +8,14 @@ class TaskDetails extends StatelessWidget {
 
 final String taskID;
 final String priority;
+final Color color;
 final String status;
 final String taskName;
 final String date;
 final String dueDate;
 final String nameCompanyAssign;
 final String today;
-
+final Color borderColor;
 
    TaskDetails({Key? key,
      required this.taskID,
@@ -24,7 +25,8 @@ final String today;
      required this.date,
      required this.dueDate,
      required this.nameCompanyAssign,
-     required this.today
+     required this.today,
+     required this.color, required this.borderColor
 
    }) : super(key: key);
 
@@ -55,14 +57,14 @@ final String today;
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8),
                         border: Border.all(
-                          color: AppColor.tabBlueSelect, // Choose the border color
+                          color: borderColor, // Choose the border color
                           width: 1, // Choose the border width
                         ),
                       ),
                       child: Text(
                         priority,
                         style: TextStyle(
-                            color: AppColor.tabBlueSelect,
+                            color: color,
                             fontWeight: FontWeight.bold,
                             fontSize: 12),
                       ),
