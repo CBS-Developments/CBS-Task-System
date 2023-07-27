@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_system/colors/appColors.dart';
 import 'package:task_system/components/add_Calendar.dart';
 import 'package:task_system/components/appBar.dart';
 import 'package:task_system/components/dash_filter_box.dart';
@@ -92,7 +93,9 @@ class _DashboardState extends State<Dashboard> {
                                      date: '0 day(s) 5 hour(s) 0 min(s) 30 sec(s)',
                                      dueDate: 'Due Date: Apr 30, 2023',
                                      nameCompanyAssign: 'Dinethri Gunawardhana -> CBS Pvt.Ltd -> Assign To: [-All-]',
-                                     today: '04/04/2023'),
+                                     today: '04/04/2023',
+                                     color: AppColor.medium,
+                                     borderColor: AppColor.medium,),
 
                                   Divider(thickness: 1,),
 
@@ -100,13 +103,15 @@ class _DashboardState extends State<Dashboard> {
                                     children: [
                                       TaskDetails(
                                           taskID: 'dine_0606#1680502025756',
-                                          priority: 'Medium',
+                                          priority: 'Regular',
                                           status: 'Pending',
                                           taskName: 'Task System Figma UI',
                                           date: '0 day(s) 5 hour(s) 0 min(s) 30 sec(s)',
                                           dueDate: 'Due Date: Apr 30, 2023',
                                           nameCompanyAssign: 'Dinethri Gunawardhana -> CBS Pvt.Ltd -> Assign To: [-All-]',
-                                          today: '04/04/2023'),
+                                          today: '04/04/2023',
+                                          color: AppColor.urgent24,
+                                          borderColor: AppColor.urgent24,),
                                     ],
 
                                   ),
@@ -116,13 +121,15 @@ class _DashboardState extends State<Dashboard> {
                                     children: [
                                       TaskDetails(
                                           taskID: 'dine_0606#1680502025756',
-                                          priority: 'Medium',
+                                          priority: 'Low',
                                           status: 'Pending',
                                           taskName: 'Task System Figma UI',
                                           date: '0 day(s) 5 hour(s) 0 min(s) 30 sec(s)',
                                           dueDate: 'Due Date: Apr 30, 2023',
                                           nameCompanyAssign: 'Dinethri Gunawardhana -> CBS Pvt.Ltd -> Assign To: [-All-]',
-                                          today: '04/04/2023'),
+                                          today: '04/04/2023',
+                                          color: AppColor.low,
+                                          borderColor: AppColor.low,),
                                     ],
                                   )
                                 ],
