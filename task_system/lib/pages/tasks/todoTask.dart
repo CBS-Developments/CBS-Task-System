@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:task_system/components/toDo_Calendar.dart';
 
 import '../../colors/appColors.dart';
 import '../../components/appBar.dart';
 import '../../components/navigate_text.dart';
 import '../../components/search_box.dart';
 import '../../drawers/mainTaskDrawer.dart';
-import '../../sizes/create_MainTask_Sizes.dart';
+//import '../../sizes/create_MainTask_Sizes.dart';
 import '../../sizes/dashboard_sizes.dart';
+import '../../sizes/todo_sizes.dart';
 import '../../tabs/task_tab.dart';
 
 class ToDoTask extends StatefulWidget {
@@ -28,7 +30,7 @@ class _ToDoTaskState extends State<ToDoTask> {
           Container(
             width: rightSideWidth(context),
             height: getPageHeight(context),
-            // color: Colors.blueAccent,
+             //color: Colors.blueAccent,
             child: Column(
               children: [
                 SizedBox(
@@ -53,12 +55,13 @@ class _ToDoTaskState extends State<ToDoTask> {
                   secButtonColor: Colors.black,
                   thirdButtonColor: Colors.black,
                   fourthButtonColor: Colors.black,
-                  fivethButtonColor:AppColor.tabBlueSelect,
+                  fivethButtonColor: AppColor.tabBlueSelect,
                 ),
                 SizedBox(
                   height: smallBoxHeight(context),
                 ),
 
+                ToDoCal()
 
               ],
             ),
