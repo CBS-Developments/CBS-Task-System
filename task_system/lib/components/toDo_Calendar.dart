@@ -1,7 +1,6 @@
-
 import 'package:flutter/material.dart';
 import 'package:table_calendar/table_calendar.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+import 'package:task_system/pages/tasks/createMainTask.dart';
 
 import '../sizes/todo_sizes.dart';
 
@@ -14,7 +13,7 @@ class ToDoCal extends StatefulWidget {
 
 class _ToDoCalState extends State<ToDoCal> {
   CalendarFormat _calendarFormat = CalendarFormat.month;
-  DateTime _selectedDay = DateTime.now();
+  DateTime? _selectedDay; // Update to nullable DateTime
   DateTime _focusedDay = DateTime.now();
 
   @override
@@ -22,67 +21,63 @@ class _ToDoCalState extends State<ToDoCal> {
     return Container(
       height: mainContHeight(context),
       width: mainContWidth(context),
-     // color: Colors.orangeAccent,
-      child: TableCalendar(
-        calendarFormat: _calendarFormat,
-        focusedDay: _focusedDay,
-        firstDay: DateTime.utc(2022, 1, 1),
-        lastDay: DateTime.utc(2030, 12, 31),
-        startingDayOfWeek: StartingDayOfWeek.monday,
-        selectedDayPredicate: (day) {
-          return isSameDay(_selectedDay, day);
-        },
-        onDaySelected: (selectedDay, focusedDay) {
-          setState(() {
-            _selectedDay = selectedDay;
-            _focusedDay = focusedDay;
-          });
-          _showAddTaskDialog(context, selectedDay);
-        },
-        onPageChanged: (focusedDay) {
-          _focusedDay = focusedDay;
-        },
+      child: Column(
+        children: [
+          TableCalendar(
+            calendarFormat: _calendarFormat,
+            focusedDay: _focusedDay,
+            firstDay: DateTime.utc(2022, 1, 1),
+            lastDay: DateTime.utc(2030, 12, 31),
+            startingDayOfWeek: StartingDayOfWeek.monday,
+            selectedDayPredicate: (day) {
+              return isSameDay(_selectedDay, day);
+            },
+            onDaySelected: (selectedDay, focusedDay) {
+              setState(() {
+                _selectedDay = selectedDay;
+                _focusedDay = focusedDay;
+              });
+            },
+            onPageChanged: (focusedDay) {
+              _focusedDay = focusedDay;
+            },
+          ),
+          if (_selectedDay != null) // Show the button only if a date is selected
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.white70, // Set the background color
+                borderRadius: BorderRadius.circular(5.0),
+                border: Border.all(color: Colors.grey), // Set border radius if desired
+              ),
+              child: ElevatedButton.icon(
+                onPressed: () {
+                  _navigateToAddTaskPage(context);
+                },
+                icon: Icon(
+                  Icons.add,
+                  color: Colors.red,
+                ),
+                label: Text(
+                  'Add Task',
+                  style: TextStyle(
+                    color: Colors.grey,
+                  ),
+                ),
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.transparent,
+                  shadowColor: Colors.transparent,
+                ),
+              ),
+            ),
+        ],
       ),
     );
   }
 
-  void _showAddTaskDialog(BuildContext context, DateTime selectedDay) async {
-    TextEditingController taskController = TextEditingController();
-    String taskName = '';
-
-    await showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: Text('Add Task for ${selectedDay.toLocal()}'),
-          content: TextField(
-            controller: taskController,
-            onChanged: (value) {
-              taskName = value;
-            },
-            decoration: InputDecoration(hintText: 'Task name'),
-          ),
-          actions: <Widget>[
-            TextButton(
-              child: Text('Cancel'),
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-            ),
-            TextButton(
-              child: Text('Add'),
-              onPressed: () {
-                if (taskName.isNotEmpty) {
-                  Fluttertoast.showToast(msg: 'Task "$taskName" added for ${selectedDay.toLocal()}');
-                  Navigator.of(context).pop();
-                } else {
-                  Fluttertoast.showToast(msg: 'Please enter a task name');
-                }
-              },
-            ),
-          ],
-        );
-      },
+  void _navigateToAddTaskPage(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => MainTask()),
     );
   }
 }
