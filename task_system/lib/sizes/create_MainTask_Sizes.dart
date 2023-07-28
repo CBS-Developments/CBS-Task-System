@@ -253,6 +253,10 @@ double tableBoxHeight(BuildContext context) {
   return (getPageHeight(context) * 0.4) ;
 }
 
+double tableBoxFullHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.7) ;
+}
+
 double tableBoxWidth(BuildContext context) {
   return (getPageWidth(context) * 0.8) ;
 }

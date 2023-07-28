@@ -152,6 +152,7 @@ class _CompletedTaskState extends State<CompletedTask> {
                 ),
                 
                 TableBox(
+                  height: tableBoxHeight(context),
                   generateRows: [
                     DataRow(cells: [
                       DataCell(Text(
