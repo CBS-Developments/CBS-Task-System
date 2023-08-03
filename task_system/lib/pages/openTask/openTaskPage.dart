@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_system/sizes/openTask_Sizes.dart';
 
 import '../../colors/appColors.dart';
 import '../../components/appBar.dart';
@@ -26,9 +27,9 @@ class _OpenTaskPageState extends State<OpenTaskPage> {
           MainTaskDrawer(), // Call myDrawer as a function and pass the context
 
           Container(
-            width: rightSideWidth(context),
+            width: middleWidth(context),
             height: getPageHeight(context),
-            //color: Colors.blueAccent,
+            color: Colors.blueAccent,
             child: Column(
               children: [
                 SizedBox(
@@ -42,28 +43,18 @@ class _OpenTaskPageState extends State<OpenTaskPage> {
                       secText: 'Main Task/',
                       thirdText: 'To-Do Task',
                     ),
-                    SearchBox()
+
                   ],
                 ),
                 SizedBox(
                   height: smallBoxHeight(context),
                 ),
-                TaskTabBar(
-                  firstButtonColor: Colors.black,
-                  secButtonColor: Colors.black,
-                  thirdButtonColor: Colors.black,
-                  fourthButtonColor: Colors.black,
-                  fivethButtonColor: AppColor.tabBlueSelect,
-                ),
-                SizedBox(
-                  height: smallBoxHeight(context),
-                ),
-
-
-
               ],
             ),
           ),
+
+
+
         ],
       ),
     );
