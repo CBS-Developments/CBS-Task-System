@@ -29,7 +29,7 @@ class _OpenTaskPageState extends State<OpenTaskPage> {
           Container(
             width: middleWidth(context),
             height: getPageHeight(context),
-            color: Colors.blueAccent,
+            // color: Colors.blueAccent,
             child: Column(
               children: [
                 SizedBox(
@@ -52,6 +52,13 @@ class _OpenTaskPageState extends State<OpenTaskPage> {
               ],
             ),
           ),
+
+          Container(
+            width: greenRightWidth(context),
+            height: getPageHeight(context),
+            color: Colors.teal.shade600,
+
+          )
 
 
 

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task_system/colors/appColors.dart';
+import 'package:task_system/pages/openTask/openTaskPage.dart';
 import 'package:task_system/sizes/create_MainTask_Sizes.dart';
 
 import '../sizes/dashboard_sizes.dart';
@@ -124,7 +125,7 @@ final Color borderColor;
                     GestureDetector(
                       onTap: () {
                         print("Open Task tapped");
-                        // Example: Navigator.push(context, MaterialPageRoute(builder: (context) => OpenTaskScreen()));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => OpenTaskPage()));
                       },
                       child: Container(
                         padding: EdgeInsets.all(8),
