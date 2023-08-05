@@ -24,7 +24,7 @@ class MyButton extends StatelessWidget {
         width: buttonWidth(context),
         decoration: BoxDecoration(
           color: AppColor.teal,
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(20),
         ),
         child: Center(
           child: Text(

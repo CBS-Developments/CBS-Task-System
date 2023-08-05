@@ -1,12 +1,14 @@
 import 'dart:core';
 
 import 'package:flutter/material.dart';
+import 'package:task_system/components/taskBox.dart';
 import 'package:task_system/sizes/openTask_Sizes.dart';
 import 'package:intl/intl.dart';
 import 'dart:core';
 
 import '../../colors/appColors.dart';
 import '../../components/appBar.dart';
+import '../../components/my_button.dart';
 import '../../components/navigate_text.dart';
 import '../../components/search_box.dart';
 import '../../drawers/mainTaskDrawer.dart';
@@ -93,6 +95,27 @@ class _OpenTaskPageState extends State<OpenTaskPage> {
                     ),
                   ),
                 ),
+
+                SizedBox(
+                  height: smallBoxHeight(context),
+                ),
+
+                TaskBoxContainer(),
+
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    MyButton(onTap: () {  }, childText: 'Main Task',),
+
+                    MyButton(onTap: () {  }, childText: 'Move To',),
+
+                    MyButton(onTap: () {  }, childText: 'Create new',),
+
+                    MyButton(onTap: () {  }, childText: 'Done',),
+
+
+                  ],
+                )
 
 
 
