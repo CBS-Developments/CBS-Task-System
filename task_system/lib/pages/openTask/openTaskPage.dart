@@ -1,6 +1,7 @@
 import 'dart:core';
 
 import 'package:flutter/material.dart';
+import 'package:task_system/components/addCommentTextBox.dart';
 import 'package:task_system/components/taskBox.dart';
 import 'package:task_system/sizes/openTask_Sizes.dart';
 import 'package:intl/intl.dart';
@@ -184,7 +185,50 @@ class _OpenTaskPageState extends State<OpenTaskPage> {
 
 
                   ],
+                ),
+
+                SizedBox(
+                  height: smallBoxHeight(context),
+                ),
+
+                Container(
+                  width: commentBoxWidth(context),
+                  height: commentBoxHeight(context),
+                  margin: EdgeInsets.symmetric(horizontal: navBoxPadding(context)),
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(15),
+                      border: Border.all(
+                        color: Colors.grey,
+                      )
+                  ),
+                  child: Row(
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+
+                          Padding(
+                            padding:  EdgeInsets.all(commentBoxPadding(context)),
+                            child: Text('Add Comment:',
+                              style: TextStyle(
+                                fontSize: addCommentFont(context),
+                                fontWeight: FontWeight.bold,
+                              )
+                              ),
+                          ),
+
+                          AddCommentTextBox()
+
+
+
+                        ],
+                      )
+                    ],
+                  ),
                 )
+
+
 
 
 

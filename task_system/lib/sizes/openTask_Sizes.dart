@@ -57,3 +57,31 @@ double doneButtonWidth(BuildContext context) {
 double openButtonIconScale(BuildContext context) {
   return (getPageWidth(context) * 0.005) * (getPageHeight(context) * 0.005);
 }
+
+double commentBoxWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.52) ;
+}
+
+double commentBoxHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.23) ;
+}
+
+double addCommentFont(BuildContext context) {
+  return (getPageWidth(context) * 0.0042) * (getPageHeight(context) * 0.0042);
+}
+
+double commentFont(BuildContext context) {
+  return (getPageWidth(context) * 0.0040) * (getPageHeight(context) * 0.0040);
+}
+
+double commentBoxPadding(BuildContext context) {
+  return (getPageWidth(context) * 0.01) ;
+}
+
+double addCommentBoxWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.275) ;
+}
+
+double addCommentBoxHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.1) ;
+}
