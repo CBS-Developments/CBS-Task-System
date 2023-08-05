@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_system/pages/openTask/openTaskPage.dart';
 import 'package:task_system/pages/tasks/completedTask.dart';
 import 'package:task_system/pages/tasks/createMainTask.dart';
 import 'package:task_system/pages/dashboard/dashboard.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ToDoTask(),
+      home: OpenTaskPage(),
     );
   }
 }

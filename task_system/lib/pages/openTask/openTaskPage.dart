@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:task_system/sizes/openTask_Sizes.dart';
+import 'package:intl/intl.dart';
+import 'dart:core';
 
 import '../../colors/appColors.dart';
 import '../../components/appBar.dart';
@@ -11,15 +13,31 @@ import '../../sizes/dashboard_sizes.dart';
 import '../../tabs/task_tab.dart';
 
 class OpenTaskPage extends StatefulWidget {
-  const OpenTaskPage({Key? key}) : super(key: key);
+
+
+
+
+  OpenTaskPage({Key? key}) : super(key: key);
 
   @override
   State<OpenTaskPage> createState() => _OpenTaskPageState();
 }
 
 class _OpenTaskPageState extends State<OpenTaskPage> {
+  late DateTime now; // Define your instance variable here
+
+  @override
+  void initState() {
+    super.initState();
+    now = DateTime.now(); // Initialize your instance variable here
+  }
+
+
+
+
   @override
   Widget build(BuildContext context) {
+    String datewithTime = DateFormat('yyyy-MM-dd HH:mm:ss').format(now);
     return Scaffold(
       appBar: myAppBar(context),
       body: Row(
@@ -31,6 +49,7 @@ class _OpenTaskPageState extends State<OpenTaskPage> {
             height: getPageHeight(context),
             // color: Colors.blueAccent,
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
                   height: smallBoxHeight(context),
@@ -40,15 +59,23 @@ class _OpenTaskPageState extends State<OpenTaskPage> {
                   children: [
                     NavigateText(
                       firstText: 'Task Dashboard/',
-                      secText: 'Main Task/',
-                      thirdText: 'To-Do Task',
+                      secText: 'My Task/',
+                      thirdText: '',
                     ),
 
                   ],
                 ),
-                SizedBox(
-                  height: smallBoxHeight(context),
-                ),
+
+                Padding(
+                  padding:  EdgeInsets.symmetric(horizontal: navBoxPadding(context)),
+                  child: Text(datewithTime,
+                    style: TextStyle(
+                      fontSize: datewithTimeFont(context),
+                      color: Colors.grey
+                    ),
+                  ),
+                )
+
               ],
             ),
           ),
