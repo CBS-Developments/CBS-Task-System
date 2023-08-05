@@ -13,7 +13,10 @@ class TaskBoxContainer extends StatelessWidget {
       margin: EdgeInsets.symmetric(horizontal: navBoxPadding(context)),
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.circular(20)
+        borderRadius: BorderRadius.circular(15),
+        border: Border.all(
+          color: Colors.grey,
+        )
       ),
 
     );

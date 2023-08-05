@@ -10,6 +10,7 @@ import '../../colors/appColors.dart';
 import '../../components/appBar.dart';
 import '../../components/my_button.dart';
 import '../../components/navigate_text.dart';
+import '../../components/openTaskButton.dart';
 import '../../components/search_box.dart';
 import '../../drawers/mainTaskDrawer.dart';
 import '../../sizes/create_MainTask_Sizes.dart';
@@ -53,7 +54,7 @@ class _OpenTaskPageState extends State<OpenTaskPage> {
           Container(
             width: middleWidth(context),
             height: getPageHeight(context),
-            // color: Colors.blueAccent,
+
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -102,16 +103,84 @@ class _OpenTaskPageState extends State<OpenTaskPage> {
 
                 TaskBoxContainer(),
 
+                SizedBox(
+                  height: smallBoxHeight(context),
+                ),
+
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    MyButton(onTap: () {  }, childText: 'Main Task',),
+                    OpenTaskButton(
+                      width: mtButtonWidth(context),
+                      onTap: () {  },
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Text(
+                            'MAIN  TASK',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: openButtonFont(context),
+                            ),
+                          ),
+                          Icon(Icons.keyboard_arrow_down_outlined,
+                            color: Colors.white,
+                            size: drawerIconScale(context),),
+                        ],
+                      ),
+                    ),
 
-                    MyButton(onTap: () {  }, childText: 'Move To',),
+                    OpenTaskButton(
+                      width: moveButtonWidth(context),
+                      onTap: () {  },
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Text(
+                            'MOVE  TO',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: openButtonFont(context),
+                            ),
+                          ),
+                          Icon(Icons.arrow_forward_outlined,
+                            color: Colors.white,
+                            size: drawerIconScale(context),),
+                        ],
+                      ),
+                    ),
 
-                    MyButton(onTap: () {  }, childText: 'Create new',),
+                    OpenTaskButton(
+                      width: cnButtonWidth(context),
+                      onTap: () {  },
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Text(
+                            'CREATE  NEW',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: openButtonFont(context),
+                            ),
+                          ),
+                          Icon(Icons.arrow_forward_outlined,
+                            color: Colors.white,
+                            size: drawerIconScale(context),),
+                        ],
+                      ),
+                    ),
 
-                    MyButton(onTap: () {  }, childText: 'Done',),
+                    OpenTaskButton(
+                      width: doneButtonWidth(context),
+                      onTap: () {  },
+                      child: Text(
+                        'DONE',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: openButtonFont(context),
+                        ),
+                      ),
+                    ),
 
 
                   ],
