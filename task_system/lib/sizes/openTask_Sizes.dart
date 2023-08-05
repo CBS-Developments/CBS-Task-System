@@ -105,3 +105,11 @@ double commentBigSizeBoxWidth(BuildContext context) {
 double commentSmallSizeBoxWidth(BuildContext context) {
   return (getPageWidth(context) * 0.0075) ;
 }
+
+double rightWBoxWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.3) ;
+}
+
+double rightWBoxHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.4) ;
+}

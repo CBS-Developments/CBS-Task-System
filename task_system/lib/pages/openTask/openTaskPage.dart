@@ -333,6 +333,33 @@ class _OpenTaskPageState extends State<OpenTaskPage> {
             width: greenRightWidth(context),
             height: getPageHeight(context),
             color: Colors.teal.shade600,
+            child: Column(
+              children: [
+                SizedBox(
+                  height: smallBoxHeight(context),
+                ),
+
+                Container(
+                  width: rightWBoxWidth(context),
+                  height: rightWBoxHeight(context),
+                  margin: EdgeInsets.symmetric(horizontal: navBoxPadding(context)),
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(15),
+                      border: Border.all(
+                        color: Colors.grey,
+                      )
+                  ),
+
+                ),
+
+                SizedBox(
+                  height: smallBoxHeight(context),
+                ),
+
+              ],
+
+            ),
 
           )
 
