@@ -14,6 +14,10 @@ double datewithTimeFont(BuildContext context) {
   return (getPageWidth(context) * 0.0037) * (getPageHeight(context) * 0.0037);
 }
 
+double taskTopicFont(BuildContext context) {
+  return (getPageWidth(context) * 0.0045) * (getPageHeight(context) * 0.0045);
+}
+
 double smallestBoxHeight(BuildContext context) {
   return (getPageHeight(context) * 0.005) ;
 }

@@ -1,3 +1,5 @@
+import 'dart:core';
+
 import 'package:flutter/material.dart';
 import 'package:task_system/sizes/openTask_Sizes.dart';
 import 'package:intl/intl.dart';
@@ -24,7 +26,8 @@ class OpenTaskPage extends StatefulWidget {
 }
 
 class _OpenTaskPageState extends State<OpenTaskPage> {
-  late DateTime now; // Define your instance variable here
+  late DateTime now;// Define your instance variable here
+  late final String taskTopic;
 
   @override
   void initState() {
@@ -38,6 +41,7 @@ class _OpenTaskPageState extends State<OpenTaskPage> {
   @override
   Widget build(BuildContext context) {
     String datewithTime = DateFormat('yyyy-MM-dd HH:mm:ss').format(now);
+    String taskTopic ='Dinethri Regular Task - April 2023';
     return Scaffold(
       appBar: myAppBar(context),
       body: Row(
@@ -74,7 +78,23 @@ class _OpenTaskPageState extends State<OpenTaskPage> {
                       color: Colors.grey
                     ),
                   ),
-                )
+                ),
+
+                SizedBox(
+                  height: smallBoxHeight(context),
+                ),
+
+                Padding(
+                  padding:  EdgeInsets.symmetric(horizontal: navBoxPadding(context)),
+                  child: Text(taskTopic,
+                    style: TextStyle(
+                        fontSize: taskTopicFont(context),
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+
+
 
               ],
             ),
