@@ -1,4 +1,5 @@
 import 'dart:core';
+import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:task_system/components/addCommentTextBox.dart';
@@ -223,13 +224,105 @@ class _OpenTaskPageState extends State<OpenTaskPage> {
 
 
                         ],
-                      )
+                      ),
+
+                      SizedBox(
+                        width: commentSizeBoxWidth(context),
+                      ),
+
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding:  EdgeInsets.all(commentBoxPadding(context)),
+                            child: Text('Attachment: ',
+                                style: TextStyle(
+                                  fontSize: addCommentFont(context),
+                                  fontWeight: FontWeight.bold,
+                                )
+                            ),
+                          ),
+
+                          Row(
+                            children: [
+                                   Icon(Icons.attach_file_outlined,
+                                  color: Colors.blue,
+                                    size: attachIconScale(context),
+                                  ),
+
+
+                              Text('Drag and drop files to attach or',
+                              style: TextStyle(
+                                fontSize: commentFont(context),
+                              ),),
+
+                              TextButton(
+                                onPressed: () {  },
+                                child: Text('Browse',
+                                  style: TextStyle(
+                                    fontSize: commentFont(context),
+                                    color: Colors.blue,
+                                    decoration: TextDecoration.underline,
+                                  ),),
+                              )
+
+
+                            ],
+                          ),
+
+                          SizedBox(
+                            height: smallBoxHeight(context),
+                          ),
+                          SizedBox(
+                            height: smallBoxHeight(context),
+                          ),
+
+
+                          Column(
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                children: [
+
+                                  SizedBox(
+                                    width: commentBigSizeBoxWidth(context),
+                                  ),
+
+                                  IconButton(
+                                    onPressed:(){},
+                                    icon: Icon(
+                                      Icons.cancel_outlined,
+                                      color: AppColor.teal,
+                                       size: iconButtonScale(context),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: commentSmallSizeBoxWidth(context),
+                                  ),
+
+                                  IconButton(
+                                    onPressed:(){},
+                                    icon: Icon(
+                                      Icons.arrow_circle_right,
+                                      color: AppColor.teal,
+                                       size: iconButtonScale(context),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          )
+                        ],
+                      ),
+
+
+                      
+
+                      
                     ],
                   ),
-                )
 
-
-
+                ),
 
 
               ],

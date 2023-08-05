@@ -27,7 +27,7 @@ double taskBoxWidth(BuildContext context) {
 }
 
 double takBoxHeight(BuildContext context) {
-  return (getPageHeight(context) * 0.45) ;
+  return (getPageHeight(context) * 0.425) ;
 }
 
 double openButtonHeight(BuildContext context) {
@@ -58,12 +58,20 @@ double openButtonIconScale(BuildContext context) {
   return (getPageWidth(context) * 0.005) * (getPageHeight(context) * 0.005);
 }
 
+double attachIconScale(BuildContext context) {
+  return (getPageWidth(context) * 0.005) * (getPageHeight(context) * 0.005);
+}
+
+double iconButtonScale(BuildContext context) {
+  return (getPageWidth(context) * 0.007) * (getPageHeight(context) * 0.007);
+}
+
 double commentBoxWidth(BuildContext context) {
   return (getPageWidth(context) * 0.52) ;
 }
 
 double commentBoxHeight(BuildContext context) {
-  return (getPageHeight(context) * 0.23) ;
+  return (getPageHeight(context) * 0.25) ;
 }
 
 double addCommentFont(BuildContext context) {
@@ -83,5 +91,17 @@ double addCommentBoxWidth(BuildContext context) {
 }
 
 double addCommentBoxHeight(BuildContext context) {
-  return (getPageHeight(context) * 0.1) ;
+  return (getPageHeight(context) * 0.125) ;
+}
+
+double commentSizeBoxWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.025) ;
+}
+
+double commentBigSizeBoxWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.125) ;
+}
+
+double commentSmallSizeBoxWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.0075) ;
 }
