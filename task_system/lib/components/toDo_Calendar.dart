@@ -19,6 +19,7 @@ class _ToDoCalState extends State<ToDoCal> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: Colors.white,
       height: mainContHeight(context),
       width: mainContWidth(context),
       child: Column(
@@ -53,18 +54,18 @@ class _ToDoCalState extends State<ToDoCal> {
                 onPressed: () {
                   _navigateToAddTaskPage(context);
                 },
-                icon: Icon(
+                icon: const Icon(
                   Icons.add,
                   color: Colors.red,
                 ),
-                label: Text(
+                label: const Text(
                   'Add Task',
                   style: TextStyle(
                     color: Colors.grey,
                   ),
                 ),
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.transparent,
+                  backgroundColor: Colors.transparent,
                   shadowColor: Colors.transparent,
                 ),
               ),
