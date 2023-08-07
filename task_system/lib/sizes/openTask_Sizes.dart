@@ -111,5 +111,5 @@ double rightWBoxWidth(BuildContext context) {
 }
 
 double rightWBoxHeight(BuildContext context) {
-  return (getPageHeight(context) * 0.4) ;
+  return (getPageHeight(context) * 0.35) ;
 }

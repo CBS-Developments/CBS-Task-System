@@ -33,6 +33,20 @@ class OpenTaskPage extends StatefulWidget {
 class _OpenTaskPageState extends State<OpenTaskPage> {
   late DateTime now;// Define your instance variable here
   late final String taskTopic;
+  // final Color borderColor;
+  // final Color color;
+
+  String get priority => 'Medium';
+  Color get color => AppColor.medium;
+  Color get borderColor => AppColor.medium;
+
+  String get taskID => ' dine_64764#8193898728';
+  String get createBy => ' Dinethri Gunawardhane';
+  String get companyName => ' CBS';
+  String get sourceFrom => ' Corporate Email';
+  String get assignTo => ' [Deshika]';
+
+
 
   @override
   void initState() {
@@ -356,6 +370,146 @@ class _OpenTaskPageState extends State<OpenTaskPage> {
                 SizedBox(
                   height: smallBoxHeight(context),
                 ),
+
+                Container(
+                  padding: const EdgeInsets.all(5.0), // Add padding to the text
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(8),
+                    border: Border.all(
+                      color: borderColor, // Choose the border color
+                      width: 1, // Choose the border width
+                    ),
+                  ),
+                  child: Text(
+                    priority,
+                    style: TextStyle(
+                        color: color,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 12),
+                  ),
+                ),
+
+                SizedBox(
+                  height: smallBoxHeight(context),
+                ),
+
+                Row(
+                  children: [
+                    SizedBox(
+                      width: commentSizeBoxWidth(context),
+                    ),
+
+                    Text('Task ID :', style:
+                      TextStyle(fontSize: commentFont(context,),
+                      color: Colors.white),),
+
+                    Text(taskID, style:
+                    TextStyle(fontSize: commentFont(context,),
+                        color: Colors.black),),
+                  ],
+                ),
+
+                SizedBox(
+                  height: smallestBoxHeight(context),
+                ),
+
+                Row(
+                  children: [
+                    SizedBox(
+                      width: commentSizeBoxWidth(context),
+                    ),
+
+                    Text('Create By :', style:
+                    TextStyle(fontSize: commentFont(context,),
+                        color: Colors.white),),
+
+                    Text(createBy, style:
+                    TextStyle(fontSize: commentFont(context,),
+                        color: Colors.black),),
+                  ],
+                ),
+
+                SizedBox(
+                  height: smallestBoxHeight(context),
+                ),
+
+                Row(
+                  children: [
+                    SizedBox(
+                      width: commentSizeBoxWidth(context),
+                    ),
+
+                    Text('Company Name :', style:
+                    TextStyle(fontSize: commentFont(context,),
+                        color: Colors.white),),
+
+                    Text(companyName, style:
+                    TextStyle(fontSize: commentFont(context,),
+                        color: Colors.black),),
+                  ],
+                ),
+
+                SizedBox(
+                  height: smallestBoxHeight(context),
+                ),
+
+                Row(
+                  children: [
+                    SizedBox(
+                      width: commentSizeBoxWidth(context),
+                    ),
+
+                    Text('Source From :', style:
+                    TextStyle(fontSize: commentFont(context,),
+                        color: Colors.white),),
+
+                    Text(sourceFrom, style:
+                    TextStyle(fontSize: commentFont(context,),
+                        color: Colors.black),),
+                  ],
+                ),
+
+                SizedBox(
+                  height: smallestBoxHeight(context),
+                ),
+
+                Row(
+                  children: [
+                    SizedBox(
+                      width: commentSizeBoxWidth(context),
+                    ),
+
+                    Text('Task Assign To :', style:
+                    TextStyle(fontSize: commentFont(context,),
+                        color: Colors.white),),
+
+                    Text(assignTo, style:
+                    TextStyle(fontSize: commentFont(context,),
+                        color: Colors.black),),
+                  ],
+                ),
+
+                SizedBox(
+                  height: smallestBoxHeight(context),
+                ),
+
+                Row(
+                  children: [
+                    SizedBox(
+                      width: commentSizeBoxWidth(context),
+                    ),
+
+                    Text('Task Assign To :', style:
+                    TextStyle(fontSize: commentFont(context,),
+                        color: Colors.white),),
+
+                    Text(assignTo, style:
+                    TextStyle(fontSize: commentFont(context,),
+                        color: Colors.black),),
+                  ],
+                ),
+
+
 
               ],
 
