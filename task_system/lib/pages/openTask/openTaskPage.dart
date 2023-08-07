@@ -45,6 +45,9 @@ class _OpenTaskPageState extends State<OpenTaskPage> {
   String get companyName => ' CBS';
   String get sourceFrom => ' Corporate Email';
   String get assignTo => ' [Deshika]';
+  String get dueDate => ' Apr 30, 2023';
+  String get taskStatus => ' Pending';
+  String get createdDate => ' 04/03/2023';
 
 
 
@@ -499,14 +502,72 @@ class _OpenTaskPageState extends State<OpenTaskPage> {
                       width: commentSizeBoxWidth(context),
                     ),
 
-                    Text('Task Assign To :', style:
+                    Text('Due Date :', style:
                     TextStyle(fontSize: commentFont(context,),
                         color: Colors.white),),
 
-                    Text(assignTo, style:
+                    Text(dueDate, style:
                     TextStyle(fontSize: commentFont(context,),
                         color: Colors.black),),
                   ],
+                ),
+
+                SizedBox(
+                  height: smallestBoxHeight(context),
+                ),
+
+                Row(
+                  children: [
+                    SizedBox(
+                      width: commentSizeBoxWidth(context),
+                    ),
+
+                    Text('Task Status :', style:
+                    TextStyle(fontSize: commentFont(context,),
+                        color: Colors.white),),
+
+                    Text(taskStatus, style:
+                    TextStyle(fontSize: commentFont(context,),
+                        color: Colors.black),),
+                  ],
+                ),
+
+                SizedBox(
+                  height: smallestBoxHeight(context),
+                ),
+
+                Row(
+                  children: [
+                    SizedBox(
+                      width: commentSizeBoxWidth(context),
+                    ),
+
+                    Text('Created Date :', style:
+                    TextStyle(fontSize: commentFont(context,),
+                        color: Colors.white),),
+
+                    Text(createdDate, style:
+                    TextStyle(fontSize: commentFont(context,),
+                        color: Colors.black),),
+                  ],
+                ),
+
+                SizedBox(
+                  height: smallBoxHeight(context),
+                ),
+
+                TextButton(
+                    onPressed:(){},
+                    child: Text('MARK IN PROGRESS',
+                    style: TextStyle(
+                      color: Colors.red,
+                      fontSize: addCommentFont(context)
+                    ),
+                    ),
+                ),
+
+                SizedBox(
+                  height: smallBoxHeight(context),
                 ),
 
 
