@@ -48,6 +48,8 @@ class _OpenTaskPageState extends State<OpenTaskPage> {
   String get dueDate => ' Apr 30, 2023';
   String get taskStatus => ' Pending';
   String get createdDate => ' 04/03/2023';
+  String get completdeBy => ' ';
+  String get completdeDate => ' ';
 
 
 
@@ -569,6 +571,43 @@ class _OpenTaskPageState extends State<OpenTaskPage> {
                 SizedBox(
                   height: smallBoxHeight(context),
                 ),
+
+                Row(
+                  children: [
+                    SizedBox(
+                      width: commentSizeBoxWidth(context),
+                    ),
+
+                    Text('Task Completed By :', style:
+                    TextStyle(fontSize: commentFont(context,),
+                        color: Colors.white),),
+
+                    Text(completdeBy, style:
+                    TextStyle(fontSize: commentFont(context,),
+                        color: Colors.black),),
+                  ],
+                ),
+
+                SizedBox(
+                  height: smallestBoxHeight(context),
+                ),
+
+                Row(
+                  children: [
+                    SizedBox(
+                      width: commentSizeBoxWidth(context),
+                    ),
+
+                    Text('Task Completed Date :', style:
+                    TextStyle(fontSize: commentFont(context,),
+                        color: Colors.white),),
+
+                    Text(completdeDate, style:
+                    TextStyle(fontSize: commentFont(context,),
+                        color: Colors.black),),
+                  ],
+                ),
+
 
 
 

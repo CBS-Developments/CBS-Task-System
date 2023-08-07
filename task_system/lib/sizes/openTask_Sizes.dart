@@ -19,7 +19,7 @@ double taskTopicFont(BuildContext context) {
 }
 
 double smallestBoxHeight(BuildContext context) {
-  return (getPageHeight(context) * 0.005) ;
+  return (getPageHeight(context) * 0.0075) ;
 }
 
 double taskBoxWidth(BuildContext context) {
