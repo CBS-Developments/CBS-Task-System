@@ -54,7 +54,7 @@ class _InProgressTaskState extends State<InProgressTask> {
                   secButtonColor: Colors.black,
                   thirdButtonColor: Colors.black,
                   fourthButtonColor: AppColor.tabBlueSelect,
-                  fivethButtonColor: Colors.black,
+                  fivethButtonColor: Colors.black, myTaskColor: Colors.black,
                 ),
                 SizedBox(
                   height: smallBoxHeight(context),

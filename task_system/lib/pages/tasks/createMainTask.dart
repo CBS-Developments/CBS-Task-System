@@ -66,7 +66,7 @@ class _MainTaskState extends State<MainTask> {
                   secButtonColor: Colors.black,
                   thirdButtonColor: Colors.black,
                   fourthButtonColor: Colors.black,
-                  fivethButtonColor: Colors.black,
+                  fivethButtonColor: Colors.black, myTaskColor: Colors.black,
                 ),
                 SizedBox(
                   height: smallBoxHeight(context),

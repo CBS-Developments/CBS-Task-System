@@ -10,6 +10,7 @@ import '../sizes/create_MainTask_Sizes.dart';
 import '../sizes/dashboard_sizes.dart';
 
 class TaskTabBar extends StatelessWidget {
+  final Color myTaskColor;
   final Color firstButtonColor;
   final Color secButtonColor;
   final Color thirdButtonColor;
@@ -22,7 +23,7 @@ class TaskTabBar extends StatelessWidget {
         required this.secButtonColor,
         required this.thirdButtonColor,
         required this.fourthButtonColor,
-        required this.fivethButtonColor})
+        required this.fivethButtonColor, required this.myTaskColor})
       : super(key: key);
 
   @override
@@ -32,6 +33,21 @@ class TaskTabBar extends StatelessWidget {
        mainAxisAlignment: MainAxisAlignment.spaceAround,
        //  mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
+          TextButton(
+            style: TextButton.styleFrom(
+              foregroundColor: myTaskColor, // Set the text color here
+            ),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => MainTask()),
+              );
+            },
+            child: Text(
+              'My Task',
+              style: TextStyle(fontSize: navTextFont(context)),
+            ),
+          ),
           TextButton(
             style: TextButton.styleFrom(
               foregroundColor: firstButtonColor, // Set the text color here

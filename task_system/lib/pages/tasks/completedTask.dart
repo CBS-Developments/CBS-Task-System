@@ -60,7 +60,7 @@ class _CompletedTaskState extends State<CompletedTask> {
                   secButtonColor: Colors.black,
                   thirdButtonColor: AppColor.tabBlueSelect,
                   fourthButtonColor: Colors.black,
-                  fivethButtonColor: Colors.black,
+                  fivethButtonColor: Colors.black, myTaskColor: Colors.black,
                 ),
                 SizedBox(
                   height: smallBoxHeight(context),

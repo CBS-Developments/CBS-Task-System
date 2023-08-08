@@ -63,7 +63,7 @@ class _SubTaskState extends State<SubTask> {
                   secButtonColor: AppColor.tabBlueSelect,
                   thirdButtonColor: Colors.black,
                   fourthButtonColor: Colors.black,
-                  fivethButtonColor: Colors.black,
+                  fivethButtonColor: Colors.black, myTaskColor: Colors.black,
                 ),
                 SizedBox(
                   height: smallBoxHeight(context),

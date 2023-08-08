@@ -55,7 +55,7 @@ class _ToDoTaskState extends State<ToDoTask> {
                   secButtonColor: Colors.black,
                   thirdButtonColor: Colors.black,
                   fourthButtonColor: Colors.black,
-                  fivethButtonColor: AppColor.tabBlueSelect,
+                  fivethButtonColor: AppColor.tabBlueSelect, myTaskColor: Colors.black,
                 ),
                 SizedBox(
                   height: smallBoxHeight(context),
