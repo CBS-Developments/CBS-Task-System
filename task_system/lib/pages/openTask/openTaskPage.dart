@@ -616,9 +616,6 @@ class _OpenTaskPageState extends State<OpenTaskPage> {
             ),
 
           )
-
-
-
         ],
       ),
     );
