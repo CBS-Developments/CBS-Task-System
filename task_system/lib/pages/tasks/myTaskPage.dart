@@ -9,6 +9,8 @@ import '../../components/task_sum.dart';
 import '../../drawers/mainTaskDrawer.dart';
 import '../../sizes/create_MainTask_Sizes.dart';
 import '../../sizes/dashboard_sizes.dart';
+import '../../sizes/myTaskPage_Sizes.dart';
+import '../../sizes/openTask_Sizes.dart';
 import '../../tabs/task_tab.dart';
 
 class MyTaskPage extends StatefulWidget {
@@ -19,6 +21,21 @@ class MyTaskPage extends StatefulWidget {
 }
 
 class _MyTaskPageState extends State<MyTaskPage> {
+  String get priority => 'Medium';
+  Color get color => AppColor.medium;
+  Color get borderColor => AppColor.medium;
+
+  String get taskID => ' dine_64764#8193898728';
+  String get createBy => ' Dinethri Gunawardhane';
+  String get companyName => ' CBS';
+  String get sourceFrom => ' Corporate Email';
+  String get assignTo => ' [Deshika]';
+  String get dueDate => ' Apr 30, 2023';
+  String get taskStatus => ' Pending';
+  String get createdDate => ' 04/03/2023';
+  String get completdeBy => ' ';
+  String get completdeDate => ' ';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -153,6 +170,257 @@ class _MyTaskPageState extends State<MyTaskPage> {
                         ],
                       ),
 
+                    ),
+
+                    Container(
+                      color: AppColor.teal,
+                      width: myTaskRightWidth(context),
+                      height: myTaskRightBoxHeight(context),
+                      child: Column(
+                        children: [
+                          SizedBox(
+                            height: smallBoxHeight(context),
+                          ),
+
+
+                          Container(
+                            padding: const EdgeInsets.all(5.0), // Add padding to the text
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                              border: Border.all(
+                                color: borderColor, // Choose the border color
+                                width: 1, // Choose the border width
+                              ),
+                            ),
+                            child: Text(
+                              priority,
+                              style: TextStyle(
+                                  color: color,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12),
+                            ),
+                          ),
+
+                          SizedBox(
+                            height: smallBoxHeight(context),
+                          ),
+
+                          Row(
+                            children: [
+                              SizedBox(
+                                width: commentSizeBoxWidth(context),
+                              ),
+
+                              Text('Task ID :', style:
+                              TextStyle(fontSize: commentFont(context,),
+                                  color: Colors.white),),
+
+                              Text(taskID, style:
+                              TextStyle(fontSize: commentFont(context,),
+                                  color: Colors.black),),
+                            ],
+                          ),
+
+                          SizedBox(
+                            height: smallestBoxHeight(context),
+                          ),
+
+                          Row(
+                            children: [
+                              SizedBox(
+                                width: commentSizeBoxWidth(context),
+                              ),
+
+                              Text('Create By :', style:
+                              TextStyle(fontSize: commentFont(context,),
+                                  color: Colors.white),),
+
+                              Text(createBy, style:
+                              TextStyle(fontSize: commentFont(context,),
+                                  color: Colors.black),),
+                            ],
+                          ),
+
+                          SizedBox(
+                            height: smallestBoxHeight(context),
+                          ),
+
+                          Row(
+                            children: [
+                              SizedBox(
+                                width: commentSizeBoxWidth(context),
+                              ),
+
+                              Text('Company Name :', style:
+                              TextStyle(fontSize: commentFont(context,),
+                                  color: Colors.white),),
+
+                              Text(companyName, style:
+                              TextStyle(fontSize: commentFont(context,),
+                                  color: Colors.black),),
+                            ],
+                          ),
+
+                          SizedBox(
+                            height: smallestBoxHeight(context),
+                          ),
+
+                          Row(
+                            children: [
+                              SizedBox(
+                                width: commentSizeBoxWidth(context),
+                              ),
+
+                              Text('Source From :', style:
+                              TextStyle(fontSize: commentFont(context,),
+                                  color: Colors.white),),
+
+                              Text(sourceFrom, style:
+                              TextStyle(fontSize: commentFont(context,),
+                                  color: Colors.black),),
+                            ],
+                          ),
+
+                          SizedBox(
+                            height: smallestBoxHeight(context),
+                          ),
+
+                          Row(
+                            children: [
+                              SizedBox(
+                                width: commentSizeBoxWidth(context),
+                              ),
+
+                              Text('Task Assign To :', style:
+                              TextStyle(fontSize: commentFont(context,),
+                                  color: Colors.white),),
+
+                              Text(assignTo, style:
+                              TextStyle(fontSize: commentFont(context,),
+                                  color: Colors.black),),
+                            ],
+                          ),
+
+                          SizedBox(
+                            height: smallestBoxHeight(context),
+                          ),
+
+                          Row(
+                            children: [
+                              SizedBox(
+                                width: commentSizeBoxWidth(context),
+                              ),
+
+                              Text('Due Date :', style:
+                              TextStyle(fontSize: commentFont(context,),
+                                  color: Colors.white),),
+
+                              Text(dueDate, style:
+                              TextStyle(fontSize: commentFont(context,),
+                                  color: Colors.black),),
+                            ],
+                          ),
+
+                          SizedBox(
+                            height: smallestBoxHeight(context),
+                          ),
+
+                          Row(
+                            children: [
+                              SizedBox(
+                                width: commentSizeBoxWidth(context),
+                              ),
+
+                              Text('Task Status :', style:
+                              TextStyle(fontSize: commentFont(context,),
+                                  color: Colors.white),),
+
+                              Text(taskStatus, style:
+                              TextStyle(fontSize: commentFont(context,),
+                                  color: Colors.black),),
+                            ],
+                          ),
+
+                          SizedBox(
+                            height: smallestBoxHeight(context),
+                          ),
+
+                          Row(
+                            children: [
+                              SizedBox(
+                                width: commentSizeBoxWidth(context),
+                              ),
+
+                              Text('Created Date :', style:
+                              TextStyle(fontSize: commentFont(context,),
+                                  color: Colors.white),),
+
+                              Text(createdDate, style:
+                              TextStyle(fontSize: commentFont(context,),
+                                  color: Colors.black),),
+                            ],
+                          ),
+
+                          SizedBox(
+                            height: smallBoxHeight(context),
+                          ),
+
+                          TextButton(
+                            onPressed:(){},
+                            child: Text('MARK IN PROGRESS',
+                              style: TextStyle(
+                                  color: Colors.red,
+                                  fontSize: addCommentFont(context)
+                              ),
+                            ),
+                          ),
+
+                          SizedBox(
+                            height: smallBoxHeight(context),
+                          ),
+
+                          Row(
+                            children: [
+                              SizedBox(
+                                width: commentSizeBoxWidth(context),
+                              ),
+
+                              Text('Task Completed By :', style:
+                              TextStyle(fontSize: commentFont(context,),
+                                  color: Colors.white),),
+
+                              Text(completdeBy, style:
+                              TextStyle(fontSize: commentFont(context,),
+                                  color: Colors.black),),
+                            ],
+                          ),
+
+                          SizedBox(
+                            height: smallestBoxHeight(context),
+                          ),
+
+                          Row(
+                            children: [
+                              SizedBox(
+                                width: commentSizeBoxWidth(context),
+                              ),
+
+                              Text('Task Completed Date :', style:
+                              TextStyle(fontSize: commentFont(context,),
+                                  color: Colors.white),),
+
+                              Text(completdeDate, style:
+                              TextStyle(fontSize: commentFont(context,),
+                                  color: Colors.black),),
+                            ],
+                          ),
+
+
+
+
+                        ],
+
+                      ),
                     ),
                   ],
                 )
