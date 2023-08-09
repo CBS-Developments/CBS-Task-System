@@ -33,9 +33,9 @@ class _SubTaskState extends State<SubTask> {
       appBar: myAppBar(context),
       body: Row(
         children: [
-          MainTaskDrawer(), // Call myDrawer as a function and pass the context
+          const MainTaskDrawer(), // Call myDrawer as a function and pass the context
 
-          Container(
+          SizedBox(
             width: rightSideWidth(context),
             height: getPageHeight(context),
             // color: Colors.blueAccent,

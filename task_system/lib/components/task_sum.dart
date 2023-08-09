@@ -44,7 +44,7 @@ final Color borderColor;
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Container(
+              SizedBox(
                 width: rightDownBoxSeparateWidth(context),
                 height: taskSum01(context),
                 //color: Colors.indigo,

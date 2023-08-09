@@ -26,7 +26,7 @@ class _DashboardState extends State<Dashboard> {
       body: Row(
         children: [
           const DashboardDrawer(),
-          Container(
+          SizedBox(
             width: rightSideWidth(context),
             height: getPageHeight(context),
             child: Column(
@@ -60,7 +60,7 @@ class _DashboardState extends State<Dashboard> {
                       height: leftBoxHeight(context),
                       child: Column(
                         children: [
-                          FilterBox(),
+                          const FilterBox(),
                           SizedBox(
                             height: smallBoxHeight(context),
                           ),
