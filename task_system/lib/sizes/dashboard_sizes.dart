@@ -83,6 +83,11 @@ double leftBoxHeight(BuildContext context) {
   return (getPageHeight(context) * 0.83) ;
 }
 
+double taskListBoxHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.78) ;
+}
+
+
 double leftBoxWidth(BuildContext context) {
   return (getPageWidth(context) * 0.55) ;
 }
@@ -97,6 +102,10 @@ double rightBoxWidth(BuildContext context) {
 
 double rightDownBoxHeight(BuildContext context) {
   return (getPageHeight(context) * 0.68) ;
+}
+
+double taskListHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.635) ;
 }
 
 double notiBoxHeight(BuildContext context) {

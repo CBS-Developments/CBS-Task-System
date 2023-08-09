@@ -4,6 +4,7 @@ import 'package:task_system/pages/tasks/completedTask.dart';
 import 'package:task_system/pages/tasks/createMainTask.dart';
 import 'package:task_system/pages/dashboard/dashboard.dart';
 import 'package:task_system/pages/login_page.dart';
+import 'package:task_system/pages/tasks/myTaskPage.dart';
 import 'package:task_system/pages/tasks/todoTask.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginPage(),
+      home: MyTaskPage(),
     );
   }
 }
