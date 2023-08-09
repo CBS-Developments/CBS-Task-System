@@ -9,3 +9,7 @@ double myTaskRightBoxHeight(BuildContext context) {
 double myTaskRightWidth(BuildContext context) {
   return (getPageWidth(context) * 0.25) ;
 }
+
+double miniCommentBoxWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.22) ;
+}

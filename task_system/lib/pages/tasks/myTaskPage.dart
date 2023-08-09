@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_system/components/smallAddComment.dart';
 
 import '../../colors/appColors.dart';
 import '../../components/appBar.dart';
@@ -414,6 +415,12 @@ class _MyTaskPageState extends State<MyTaskPage> {
                                   color: Colors.black),),
                             ],
                           ),
+
+                          SizedBox(
+                            height: smallBoxHeight(context),
+                          ),
+
+                          SmallCommentBox()
 
 
 

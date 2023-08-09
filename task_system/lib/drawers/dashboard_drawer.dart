@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:task_system/pages/dashboard/dashboard.dart';
 import 'package:task_system/pages/tasks/createMainTask.dart';
+import 'package:task_system/pages/tasks/myTaskPage.dart';
 
 import '../colors/appColors.dart';
 import '../sizes/create_MainTask_Sizes.dart';
@@ -22,7 +24,13 @@ class DashboardDrawer extends StatelessWidget {
           SizedBox(height: smallBoxHeight(context),),
 
           MyDrawerButton(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => Dashboard()),
+              );
+            },
             fillColor: Colors.white,
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -52,7 +60,7 @@ class DashboardDrawer extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => MainTask()),
+                    builder: (context) => MyTaskPage()),
               );
             },
             fillColor: AppColor.lightBlue,

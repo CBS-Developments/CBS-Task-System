@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:task_system/colors/appColors.dart';
 import 'package:task_system/drawers/mainDrawerButtn.dart';
 import 'package:task_system/pages/dashboard/dashboard.dart';
+import 'package:task_system/pages/tasks/myTaskPage.dart';
 import 'package:task_system/sizes/create_MainTask_Sizes.dart';
 
 class MainTaskDrawer extends StatelessWidget {
@@ -51,7 +52,13 @@ class MainTaskDrawer extends StatelessWidget {
           SizedBox(height: smallBoxHeight(context),),
 
           MyDrawerButton(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => MyTaskPage()),
+              );
+            },
             fillColor: Colors.white,
             child: Row(
               children: [
