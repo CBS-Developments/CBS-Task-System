@@ -4,6 +4,7 @@ import 'package:task_system/pages/tasks/completedTask.dart';
 import 'package:task_system/pages/tasks/createMainTask.dart';
 import 'package:task_system/pages/tasks/createSubTask.dart';
 import 'package:task_system/pages/tasks/in_progressTask.dart';
+import 'package:task_system/pages/tasks/myTaskPage.dart';
 import 'package:task_system/pages/tasks/todoTask.dart';
 
 import '../sizes/create_MainTask_Sizes.dart';
@@ -40,7 +41,7 @@ class TaskTabBar extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => MainTask()),
+                MaterialPageRoute(builder: (context) => MyTaskPage()),
               );
             },
             child: Text(
