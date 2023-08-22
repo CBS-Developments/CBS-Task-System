@@ -53,7 +53,7 @@ class LoginPage extends StatelessWidget {
                       SizedBox(
                         height: sizeBoxLHeight(context),
                       ),
-                      LoginTextField(
+                      const LoginTextField(
                         labelText: 'User Name',
                       ),
                       SizedBox(
