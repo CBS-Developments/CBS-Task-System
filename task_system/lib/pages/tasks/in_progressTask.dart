@@ -59,7 +59,8 @@ class _InProgressTaskState extends State<InProgressTask> {
                 SizedBox(
                   height: smallBoxHeight(context),
                 ),
-                TableBox(height: tableBoxFullHeight(context), generateRows: [
+                TableBox(height: tableBoxFullHeight(context),
+                    generateRows: [
 
                   DataRow(cells: [
                     DataCell(Text(

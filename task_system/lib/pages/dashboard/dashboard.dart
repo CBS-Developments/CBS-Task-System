@@ -164,7 +164,7 @@ class _DashboardState extends State<Dashboard> {
                                 ),
                               ],
                             ),
-                            child: const Stack(
+                            child:  Stack(
                               alignment: Alignment.topLeft,
                               children: [
                                 Padding(
@@ -188,7 +188,7 @@ class _DashboardState extends State<Dashboard> {
                           SizedBox(
                             height: smallBoxHeight(context),
                           ),
-                          const Column(
+                          Column(
                             children: [
                               AddCalendar(),
                             ],
